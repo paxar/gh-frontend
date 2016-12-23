@@ -33,8 +33,6 @@ gulp.task('bower', function () {
         .pipe(gulp.dest('./app'));
 });
 
-
-
 // server connect
 gulp.task('connect', function() {
     connect.server({

@@ -1,0 +1,31 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 40px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color: #39c9da;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+  &:hover {
+    outline: none;
+    background-color: #17daa3;
+    color: #fff;
+  }
+  &:focus {
+    outline: none;
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    width: 201px;
+    height: 55px;
+    font-size: 20px;
+  }
+}

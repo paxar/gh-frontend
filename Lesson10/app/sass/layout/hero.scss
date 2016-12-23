@@ -1,0 +1,72 @@
+.hero {
+  background: url("../img/bg-hero.jpg") 50% 0 /cover no-repeat;
+  position: relative;
+  height: 100vh;
+  padding: 30px 0 90px;
+  color: #fff;
+  .logo {
+    width: 128px;
+    height: 23px;
+    overflow: hidden;
+  }
+  .main-nav  {
+    button {
+      margin: 0;
+      padding: 0;
+      font-size: 24px;
+      color: #fff;
+    }
+    .nav-menu {
+      padding: 0;
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    }
+    a {
+      padding: 3px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: 0.3s all ease-out;
+      color: #fff;
+      &:hover {
+        background: none;
+        color: #17daa3;;
+      }
+    }
+  }
+  .intro {
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    .slogan {
+      margin-bottom: 30px;
+      font-size: 25px;
+      line-height: 35px;
+      color: #fff;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    .main-nav  {
+      .nav-menu {
+        background: none;
+      }
+      a {
+        padding: 0 17px;
+        font-size: 15px;
+      }
+    }
+    .intro {
+      width: 60%;
+      .slogan {
+        margin-bottom: 40px;
+        font-size: 33px;
+        line-height: 45px;
+      }
+    }
+  }
+}
