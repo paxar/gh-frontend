@@ -11,16 +11,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        button {
-            border-radius: 1px;
-            text-transform: capitalize;
-            transition: 0.3s all ease-out;
-            background: none;
-            border: 1px solid #fff;
-            &:hover {
-              background: none;
-            }
-        }
         img {
           width: 100%;
         }
