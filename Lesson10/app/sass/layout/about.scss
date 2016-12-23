@@ -5,10 +5,11 @@
     margin-bottom: 45px;
     font-size: 12px;
     line-height: 15px;
-    &:before {
+    &:after {
       content: '';
       position: absolute;
       top: 35px;
+      left: 0;
       width: 70px;
       border-bottom: 1px solid #39c9da;
     }
@@ -35,7 +36,7 @@
       margin-bottom: 50px;
       font-size: 14px;
       line-height: 20px;
-      &:before {
+      &:after {
         top: 40px;
         width: 100px;
         border-bottom: 2px solid #39c9da;
