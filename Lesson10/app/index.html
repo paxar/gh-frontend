@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>UIBrush</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+    <!-- build:css css/vendor.css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- endbuild -->
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="css/main.min.css">
     <!-- endbuild -->
@@ -31,11 +33,11 @@
                         </div>
                         <div id="navbar-collapse" class="navbar-collapse collapse text-center">
                             <ul class="nav navbar-nav nav-menu">
-                                <li class="active"><a href="">Home</a></li>
-                                <li><a href="">About us</a></li>
-                                <li><a href="">Portfolio</a></li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">Contact us</a></li>
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#about-us">About us</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#contact-us">Contact us</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -47,7 +49,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about-us">
         <div class="container">
             <h2 class="title">About us</h2>
             <p class="subtitle">
@@ -66,7 +68,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio" id="port">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title">Portfolio</h2>
             <p class="subtitle">
@@ -136,7 +138,7 @@
             </ul>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <h2 class="title">services</h2>
             <p class="subtitle">
@@ -170,7 +172,7 @@
             </ul>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact-us">
         <div class="container">
             <h2 class="title">contact us</h2>
             <p class="subtitle">
@@ -204,7 +206,9 @@
             </span>
         </div>
     </footer>
+    <!-- build:js js/vendor.js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbuild -->
 </body>
 </html>

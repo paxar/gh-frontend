@@ -29,7 +29,10 @@
       color: #fff;
       &:hover {
         background: none;
-        color: #17daa3;;
+        color: #17daa3;
+      }
+      &:focus {
+        background: none;
       }
     }
   }
