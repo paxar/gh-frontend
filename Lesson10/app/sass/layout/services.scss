@@ -64,3 +64,11 @@
     }
   }
 }
+
+@media (min-width: 992px) {
+  .services {
+    li {
+      flex-basis: 22%;
+    }
+  }
+}

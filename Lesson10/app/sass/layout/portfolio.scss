@@ -42,16 +42,17 @@
 }
 
 @media (min-width: 768px) {
-  .portfolio {
-    .flex-content {
-        .title-albums {
-          .project {
-            font-size: 14px;
-          }
-          span {
-            font-size: 12px;
-          }
-        }
-      }
+  #port{
+    li {
+      flex-basis: 45%;
     }
   }
+}
+
+@media (min-width: 992px) {
+  #port{
+    li {
+      flex-basis: 30%;
+    }
+  }
+}
