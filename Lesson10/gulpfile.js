@@ -14,17 +14,6 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     wiredep = require('wiredep').stream;
 
-var path = {
-    build: {
-        img: 'dist/img/',
-        fonts: 'dist/fonts/'
-    },
-    src: {
-        img: 'app/img/**/*.*',
-        fonts: 'app/fonts/**/*.*'
-    }
-};
-
 gulp.task('bower', function () {
     gulp.src('./app/index.html')
         .pipe(wiredep({
@@ -80,12 +69,12 @@ gulp.task('useref', function() {
 
 //img and fonts
 gulp.task('fonts:build', function() {
-    gulp.src(path.src.fonts)
-        .pipe(gulp.dest(path.build.fonts))
+    return gulp.src('app/fonts/**/*.*')
+        .pipe(gulp.dest('dist/fonts/'))
 });
 gulp.task('img:build', function() {
-    gulp.src(path.src.img)
-        .pipe(gulp.dest(path.build.img))
+    return gulp.src('app/img/**/*.*')
+        .pipe(gulp.dest('dist/img/'))
 });
 
 gulp.task('build', ['useref', 'fonts:build', 'img:build']);
