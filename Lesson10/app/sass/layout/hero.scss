@@ -1,8 +1,7 @@
 .hero {
-  background: url("../img/bg-hero.jpg") 50% 0 /cover no-repeat;
+  background: url("../img/bg-hero.jpg") 50% /cover no-repeat;
   position: relative;
-  height: 100vh;
-  padding: 30px 0 90px;
+  padding: 30px 0 100px;
   color: #fff;
   .logo {
     width: 128px;
@@ -10,6 +9,7 @@
     overflow: hidden;
   }
   .main-nav  {
+    position: relative;
     button {
       margin: 0;
       padding: 0;
@@ -17,8 +17,11 @@
       color: #fff;
     }
     .nav-menu {
+      position: absolute;
+      width: 100%;
       padding: 0;
       background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+      overflow: hidden;
     }
     a {
       padding: 3px;
@@ -38,11 +41,8 @@
   }
   .intro {
     width: 80%;
-    position: absolute;
+    margin: 200px auto 0;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
     .slogan {
       margin-bottom: 30px;
       font-size: 25px;
@@ -56,6 +56,8 @@
   .hero {
     .main-nav  {
       .nav-menu {
+        position: inherit;
+        width: inherit;
         background: none;
       }
       a {
