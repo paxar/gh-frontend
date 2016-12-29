@@ -67,7 +67,7 @@ gulp.task('useref', function() {
         .pipe(gulp.dest('dist'));
 });
 
-//img and fonts
+//img and fontss
 gulp.task('fonts:build', function() {
     return gulp.src('app/fonts/**/*.*')
         .pipe(gulp.dest('dist/fonts/'))
