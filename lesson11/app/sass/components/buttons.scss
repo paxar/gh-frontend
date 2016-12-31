@@ -1,0 +1,32 @@
+.btn {
+  display: block;
+  width: 121px;
+  height: 41px;
+  border-radius: 0;
+  border: 2px solid $color-primary;
+  background: none;
+  font-family: $font-primary;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: $color-primary;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+  &:hover {
+    outline: none;
+    background-color: $color-primary;
+    color: $color-heading;
+  }
+  &:focus {
+    outline: none;
+    color: $color-heading;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    width: 151px;
+    height: 51px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,19 @@
+@import "utils/var";
+
+@import "../bower_components/meyer-reset/stylesheets/meyer-reset";
+@import "../bower_components/font-awesome/scss/font-awesome";
+
+@import "base/common";
+@import "base/fonts";
+
+@import "components/buttons";
+@import "components/slider";
+
+@import "layout/header";
+@import "layout/hero";
+@import "layout/about";
+@import "layout/services";
+@import "layout/clients";
+@import "layout/news";
+@import "layout/partners";
+@import "layout/footer";
