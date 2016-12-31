@@ -1,0 +1,20 @@
+.about {
+  .about-content {
+    p {
+      margin-bottom: 20px;
+      font: 400 12px/28px $font-content;
+      color: $color-content;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    .about-content {
+      p {
+        margin-bottom: 30px;
+        font-size: 14px;
+      }
+    }
+  }
+}
