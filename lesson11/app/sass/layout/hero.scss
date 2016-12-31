@@ -1,0 +1,63 @@
+.hero {
+  background: url("../img/bg-hero.png") 50% 0 /cover no-repeat, #000;
+  overflow: hidden;
+  color: #fff;
+ .intro-hero {
+   width: 75%;
+   padding: 70px 5px;
+   .welcome {
+     font-family: $font-primary;
+     text-transform: uppercase;
+     font-weight: 700;
+     font-size: 30px;
+     p {
+       font-weight: 600;
+       font-size: 14px;
+       line-height: 24px;
+     }
+   }
+   .intro {
+     display: block;
+     margin-bottom: 40px;
+     font-family: $font-intro;
+     font-size: 14px;
+     line-height: 30px;
+   }
+ }
+}
+
+.main {
+  max-width: 800px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    .intro-hero {
+      width: 60%;
+      padding: 150px 10px;
+      .welcome {
+        font-size: 45px;
+        p {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .intro {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    .intro-hero {
+      width: 50%;
+      padding: 200px 10px;
+      .welcome {
+        font-size: 60px;
+      }
+    }
+  }
+}
