@@ -5,10 +5,8 @@
   border-radius: 0;
   border: 2px solid $color-primary;
   background: none;
-  font-family: $font-primary;
+  font: 700 12px $font-primary;
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
   color: $color-primary;
   transition: 0.3s all ease-out;
   cursor: pointer;
