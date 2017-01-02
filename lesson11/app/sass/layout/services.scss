@@ -10,15 +10,6 @@
         filter: brightness(0);
       }
     }
-    h3 {
-      font: 700 14px/24px $font-primary;
-      text-transform: uppercase;
-      color: $color-heading;
-      cursor: pointer;
-    }
-    p {
-      font: 400 12px/28px $font-content;
-    }
     li {
       margin-bottom: 50px;
       &:hover {
@@ -34,19 +25,6 @@
         img {
           filter: brightness(1);
         }
-      }
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .services {
-    .services-category {
-      h3 {
-        font-size: 16px;
-      }
-      p {
-        font-size: 14pxt;
       }
     }
   }

@@ -22,6 +22,16 @@ a {
   }
 }
 
+h3 {
+  font: 700 14px/24px $font-primary;
+  text-transform: uppercase;
+  color: $color-heading;
+  cursor: pointer;
+}
+p {
+  font: 400 12px/28px $font-content;
+}
+
 @media (min-width: 768px) {
   .title {
     h2 {
@@ -30,5 +40,11 @@ a {
     p {
       font-size: 16px;
     }
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14pxt;
   }
 }

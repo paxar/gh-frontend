@@ -1,0 +1,15 @@
+.pyramid {
+  position: relative;
+  &:after {
+    content: url("../img/yellow-pyramid.png");
+    position: absolute;
+    right: 0;
+    bottom: -93px;
+  }
+  &:before {
+    content: url("../img/blue-pyramid.png");
+    position: absolute;
+    right: 67.5px;
+    bottom: -93px;
+  }
+}
