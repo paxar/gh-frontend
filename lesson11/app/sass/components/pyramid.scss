@@ -1,15 +1,28 @@
 .pyramid {
   position: relative;
+  overflow: hidden;
   &:after {
     content: url("../img/yellow-pyramid.png");
     position: absolute;
     right: 0;
-    bottom: -93px;
+    bottom: -23px;
   }
   &:before {
     content: url("../img/blue-pyramid.png");
     position: absolute;
     right: 67.5px;
-    bottom: -93px;
+    bottom: -23px;
   }
 }
+
+@media (min-width: 768px) {
+  .pyramid {
+    &:after {
+      bottom: -3px;
+    }
+    &:before {
+      bottom: -3px;
+    }
+  }
+}
+

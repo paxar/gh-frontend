@@ -5,7 +5,7 @@ $('.slider-hero').slick({
     cssEase: 'ease-in'
 });
 
-$('.slider-main').slick({
+$('.slider-clients').slick({
     dots: true,
     arrows: false,
     cssEase: 'ease-in',
@@ -24,6 +24,30 @@ $('.slider-main').slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
+            }
+        }
+    ]
+});
+
+$('.slider-partners').slick({
+    dots: true,
+    arrows: false,
+    cssEase: 'ease-in',
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    responsive: [
+        {
+            breakpoint: 680,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4
             }
         }
     ]
