@@ -32,7 +32,7 @@ gulp.task('connect', function() {
 
 // html
 gulp.task('html', function() {
-    return gulp.src('app/index.html')
+    return gulp.src('app/*.html')
         .pipe(connect.reload());
 });
 
