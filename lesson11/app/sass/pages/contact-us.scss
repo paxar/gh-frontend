@@ -1,0 +1,109 @@
+.contact-us {
+  background: url("../img/bg-contact.png") 50% 0 /cover no-repeat, #000;
+  overflow: hidden;
+  .hero-contact {
+    padding: 100px 0;
+  }
+}
+
+.contact {
+  .info-contact {
+    padding: 30px 0;
+  }
+  .tel {
+    a {
+      font: 700 16px $font-content;
+      color: $color-heading;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+  .btn {
+    width: auto;
+    margin: 30px 15px;
+    a {
+      font: 700 16px $font-primary;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-heading;
+    }
+  }
+  .location {
+    background: url("../img/location.png") 50% 35% scroll /cover no-repeat, #000;
+    padding: 100px 50px;
+    overflow: hidden;
+    .title {
+      h2 {
+        margin-bottom: 15px;
+        letter-spacing: 3px;
+        color: $color-primary;
+      }
+  }
+    address {
+      font: 700 16px/24px $font-primary;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $color-hero;
+    }
+  }
+}
+
+.contact-form {
+  background-color: #eaeff3;
+  overflow: hidden;
+  ul {
+    input, textarea, select {
+      width: 100%;
+      margin-top: 30px;
+      padding: 0 0 5px 4px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #dce3e8;
+      font: 700 14px/24px $font-content;
+      text-transform: uppercase;
+      outline: none;
+      resize: none;
+      color: #757c81;
+      &::-webkit-input-placeholder {
+        color: #757c81;
+      }
+    }
+    select {
+      padding: 0 0 8px 0;
+    }
+    textarea {
+      height: 150px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-us {
+    .hero-contact {
+      padding: 150px 0;
+    }
+  }
+  .contact {
+    .btn {
+      float: right;
+      margin-top: 0;
+    }
+    .location {
+      padding: 140px 90px;
+    }
+  }
+  .contact-form {
+    background-color: #eaeff3;
+    overflow: hidden;
+    ul {
+      input, textarea, select {
+        margin-top: 40px;
+      }
+      textarea {
+        height: 250px;
+      }
+    }
+  }
+}

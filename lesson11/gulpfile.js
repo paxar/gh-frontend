@@ -15,7 +15,7 @@ var gulp = require('gulp'),
     wiredep = require('wiredep').stream;
 
 gulp.task('bower', function () {
-    gulp.src('./app/index.html')
+    gulp.src('./app/*.html')
         .pipe(wiredep({
             directory: "app/bower_components"
         }))
@@ -60,7 +60,7 @@ gulp.task('js', function() {
 gulp.task('watch', function() {
     gulp.watch('app/sass/**/*.scss', ['css'])
     gulp.watch('app/css/*.css', ['css'])
-    gulp.watch('app/index.html', ['html'])
+    gulp.watch('app/*.html', ['html'])
     gulp.watch('app/js/*.js', ['js'])
 });
 

@@ -1,0 +1,39 @@
+.tel {
+  font-size: 12px;
+  a {
+    font-weight: 600;
+    color: $color-hero;
+    &:hover {
+      font-weight: 700;
+      color: $color-primary;
+      text-decoration: none;
+    }
+    &:focus {
+      text-decoration: none;
+    }
+  }
+  &::before {
+    content: " ";
+    background: url("../img/phone-call.svg") /cover no-repeat;
+    position: relative;
+    display: inline-block;
+    margin-right: 7px;
+    top: 7px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 992px) {
+  .tel {
+    a {
+      font-size: 14px;
+    }
+    &::before {
+      margin-right: 10px;
+      width: 23px;
+      height: 23px;
+    }
+  }
+}
