@@ -59,9 +59,9 @@ gulp.task('js', function() {
 // watch
 gulp.task('watch', function() {
     gulp.watch('app/sass/**/*.scss', ['css'])
-    gulp.watch('app/css/*.css', ['css'])
-    gulp.watch('app/*.html', ['html'])
-    gulp.watch('app/js/*.js', ['js'])
+    .watch('app/css/*.css', ['css'])
+    .watch('app/*.html', ['html'])
+    .watch('app/js/*.js', ['js'])
 });
 
 // default
