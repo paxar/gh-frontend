@@ -21,10 +21,46 @@
   }
 }
 
+.btn-next {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px;
+  border-radius: 0;
+  border: 2px solid #2a2b2c;
+  background: none;
+  font: 400 15px $font-content;
+  text-transform: uppercase;
+  transition: 0.3s all ease-out;
+  color: #2a2b2c;
+  cursor: pointer;
+  &.active-btn {
+    border-color: $color-primary;
+    color: $color-primary;
+  }
+  &:hover {
+    text-decoration: none;
+    outline: none;
+    background-color: $color-primary;
+    color: $color-heading;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
 @media (min-width: 768px) {
   .btn {
     width: 151px;
     height: 51px;
     font-size: 13px;
+  }
+  .btn-next {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
   }
 }

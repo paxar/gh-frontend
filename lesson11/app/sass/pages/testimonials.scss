@@ -81,13 +81,12 @@
       padding: 10px 15px;
       background: none;
       border: 1px solid #dfe5ea;
-      font: 700 13px $font-content;
+      font: 400 13px $font-content;
       text-transform: uppercase;
       outline: none;
       resize: none;
-      color: #757c81;
       &::-webkit-input-placeholder {
-        color: #757c81;
+        color: $color-content;
       }
     }
     textarea {
@@ -101,6 +100,11 @@
 }
 
 @media (min-width: 768px) {
+  .reviews {
+    .hero-comment {
+      padding: 150px 0;
+    }
+  }
   .testimonials {
     .happy-clients {
       position: relative;
