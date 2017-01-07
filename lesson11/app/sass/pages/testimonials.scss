@@ -14,7 +14,7 @@
     position: relative;
     margin-bottom: 30px;
     &:before {
-      font-family: "Bodoni MT Black";
+      font-family: 'Domani';
       content: '“';
       position: absolute;
       font-size: 350px;
@@ -22,7 +22,7 @@
       opacity: 0.15;
       color: #36a8ff;
       right: 0;
-      top: -50px;
+      top: -55px;
       z-index: 20;
     }
   }

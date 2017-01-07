@@ -31,9 +31,9 @@
         transition: 0.3s all ease-out;
       }
       &:hover {
-        border: 1px solid #fff;
+        border: 1px solid $color-primary;
         i {
-          color: #fff;
+          color: $color-primary;
         }
       }
     }

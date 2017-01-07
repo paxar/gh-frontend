@@ -20,14 +20,13 @@
     }
   }
   .btn {
+    float: left;
     width: auto;
     margin: 30px 15px;
-    a {
-      font: 700 16px $font-primary;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: $color-heading;
-    }
+    font: 700 16px $font-primary;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-heading;
   }
   .location {
     background: url("../img/location.png") 50% 35% scroll /cover no-repeat, #000;

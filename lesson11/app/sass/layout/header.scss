@@ -17,9 +17,7 @@
     .tel {
       float: right;
       clear: both;
-      &::before {
-        margin-left: 10px;
-      }
+      margin-left: 10px;
     }
     .nav-btn {
       float: right;
@@ -70,6 +68,15 @@
         .tel {
           flex-grow: 1;
           padding-bottom: 3px;
+          &::after {
+            content: '';
+            position: relative;
+            font-size: 20px;
+            left: -120px;
+            top: 4px;
+            border-left: 1px solid #fff;
+            opacity: 0.15;
+          }
         }
       }
       .nav-btn {
@@ -106,15 +113,22 @@
 @media (min-width: 992px) {
   .hero {
     .navbar {
-      .tel {
-        &::before {
-          margin-left: 40px;
+      .flex-nav {
+        .tel {
+          &::before {
+            margin-left: 40px;
+          }
+          &::after {
+            font-size: 23px;
+            left: -160px;
+            top: 5px;
+          }
         }
       }
       .nav-menu {
         a {
           font-size: 13px;
-          padding: 0 15px;
+          padding: 0 14px;
         }
       }
     }
