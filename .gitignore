@@ -157,5 +157,9 @@ jspm_packages
 # Yarn Integrity file
 .yarn-integrity
 
+# Other
+dist/
+build/
+
 
 # End of https://www.gitignore.io/api/bower,windows,macos,phpstorm,node
