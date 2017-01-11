@@ -87,7 +87,10 @@
 }
 
 @media (min-width: 768px) {
-  .news-main {
+  .news-page {
+    .hero-news-page {
+      padding: 150px 0;
+    }
   }
 }
 

@@ -1,0 +1,50 @@
+.services-page {
+  background: url("../img/bg-services.png") 50% 0 /cover no-repeat, #000;
+  overflow: hidden;
+  .hero-services-page {
+    padding: 100px 0;
+  }
+}
+
+.services-main {
+  .services {
+    background: none;
+    img {
+      width: 80%;
+      filter: brightness(0);
+      &:hover {
+        filter: brightness(1);
+      }
+    }
+    h3 {
+      margin-bottom: 20px;
+    }
+    .btn {
+      margin-top: 40px;
+    }
+  }
+  li {
+    .title {
+      position: relative;
+      margin-bottom: 60px;
+    }
+  }
+  li:nth-child(even) {
+    background-color: #eaeff3;
+    overflow: hidden;
+    div, img {
+      text-align: right;
+    }
+    .btn {
+      float: right;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .services-page {
+    .hero-services-page {
+      padding: 150px 0;
+    }
+  }
+}
