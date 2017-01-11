@@ -14,7 +14,8 @@
       margin-bottom: 50px;
       &:hover {
         h3:after {
-          content: '';
+          content: url("../img/rocket.svg");
+          fill: #b1f94b;
           position: absolute;
           width: 14px;
           height: 2px;
