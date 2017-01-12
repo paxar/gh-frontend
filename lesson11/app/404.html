@@ -34,7 +34,7 @@
                     <div class="collapse navbar-collapse nav-menu" id="navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="404.html">About us</a></li>
+                            <li><a href="about_us.html">About us</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="news.html">News</a></li>
                             <li><a href="blog.html">Blog</a></li>
@@ -94,9 +94,18 @@
                     <h3>Quick contact us</h3>
                     <form action="#" class="form-footer" name="form-footer">
                         <ul class="flex-content">
-                            <li class="name"><input type="text" name="name" placeholder="Name *"></li>
-                            <li class="email"><input type="email" name="email" placeholder="Email *"></li>
-                            <li class="comment"><textarea placeholder="Comment *"></textarea></li>
+                            <li class="name">
+                                <input id="name" type="text" name="name">
+                                <label for="name">Name <span>*</span></label>
+                            </li>
+                            <li class="email">
+                                <input id="email" type="email" name="email">
+                                <label for="email">Email <span>*</span></label>
+                            </li>
+                            <li class="comment">
+                                <textarea id="comment"></textarea>
+                                <label for="comment">Comment <span>*</span></label>
+                            </li>
                         </ul>
                         <input class="btn" type="submit" value="Submit Now">
                     </form>

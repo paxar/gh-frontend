@@ -1,0 +1,93 @@
+.about-page {
+  background: url("../img/bg-about.png") 50% 0 /cover no-repeat, #000;
+  overflow: hidden;
+  .hero-about-page {
+    padding: 100px 0;
+  }
+}
+
+.about-us {
+  .title + p {
+    margin: 30px 0 80px;
+  }
+  .lets-talk {
+    text-align: center;
+    background: url("../img/about-us.png") 80% 25% scroll /cover no-repeat, #000;
+    padding: 100px 0;
+    overflow: hidden;
+    .btn {
+      margin: 15px;
+      display: inline-block;
+    }
+  }
+}
+
+.our-views {
+  background-color: #eaeff3;
+  overflow: hidden;
+  .pyramid {
+    &:after {
+      left: 67.5px;
+    }
+    &:before {
+      left: 0;
+    }
+  }
+  .flex-content {
+    padding: 25px 0;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  li:nth-child(2n) {
+    text-align: right;
+  }
+  li:last-child.flex-content {
+    padding-bottom: 0;
+  }
+  img {
+    width: 100%;
+    background-color: #000;
+  }
+  h3 {
+    margin: 20px 0 10px;
+  }
+}
+
+.our-clients {
+  .logo-partners {
+    margin: 40px 0 90px;
+    height: 256px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      border-bottom: 1px solid #eaeff3;
+    }
+    img {
+      position: relative;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about-page {
+    .hero-about-page {
+      padding: 150px 0;
+    }
+  }
+  .our-views {
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .about-us {
+    .lets-talk {
+      padding: 170px 0;
+    }
+  }
+}
