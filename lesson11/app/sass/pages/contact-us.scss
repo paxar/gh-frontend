@@ -1,9 +1,6 @@
-.contact-us {
+.contact-page {
   background: url("../img/bg-contact.png") 50% 0 /cover no-repeat, #000;
   overflow: hidden;
-  .hero-contact {
-    padding: 100px 0;
-  }
 }
 
 .contact {
@@ -48,42 +45,7 @@
   }
 }
 
-.contact-form {
-  background-color: #eaeff3;
-  overflow: hidden;
-  ul {
-    input, textarea, select {
-      width: 100%;
-      margin-top: 30px;
-      padding: 0 0 5px 4px;
-      background: none;
-      border: none;
-      border-bottom: 1px solid #dce3e8;
-      font: 700 14px/24px $font-content;
-      text-transform: uppercase;
-      outline: none;
-      resize: none;
-      color: #757c81;
-      &::-webkit-input-placeholder {
-        color: #757c81;
-      }
-    }
-    select {
-      padding: 0 0 8px 0;
-    }
-    textarea {
-      height: 150px;
-      margin-bottom: 40px;
-    }
-  }
-}
-
 @media (min-width: 768px) {
-  .contact-us {
-    .hero-contact {
-      padding: 150px 0;
-    }
-  }
   .contact {
     .btn {
       float: right;
@@ -91,18 +53,6 @@
     }
     .location {
       padding: 140px 90px;
-    }
-  }
-  .contact-form {
-    background-color: #eaeff3;
-    overflow: hidden;
-    ul {
-      input, textarea, select {
-        margin-top: 40px;
-      }
-      textarea {
-        height: 250px;
-      }
     }
   }
 }

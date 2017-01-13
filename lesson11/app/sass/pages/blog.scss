@@ -1,12 +1,9 @@
-.blog {
+.blog-page {
   background: url("../img/bg-blog.png") 50% 0 /cover no-repeat, #000;
   overflow: hidden;
-  .hero-blog {
-    padding: 100px 0;
-  }
 }
 
-.blog-page {
+.blog {
   .nav-blog {
     justify-content: center;
     margin: 40px 020px;
@@ -78,11 +75,6 @@
 }
 
 @media (min-width: 768px) {
-  .blog {
-    .hero-blog {
-      padding: 150px 0;
-    }
-  }
   .article {
     .share {
       margin-left: 10px;

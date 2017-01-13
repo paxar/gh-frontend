@@ -1,9 +1,6 @@
 .services-page {
   background: url("../img/bg-services.png") 50% 0 /cover no-repeat, #000;
   overflow: hidden;
-  .hero-services-page {
-    padding: 100px 0;
-  }
 }
 
 .services-main {
@@ -37,14 +34,6 @@
     }
     .btn {
       float: right;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .services-page {
-    .hero-services-page {
-      padding: 150px 0;
     }
   }
 }

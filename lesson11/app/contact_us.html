@@ -15,7 +15,7 @@
         <!-- endbuild -->
     </head>
 <body>
-    <section class="hero contact-us">
+    <section class="hero contact-page">
         <header>
             <nav class="navbar">
                 <div class="container">
@@ -34,18 +34,18 @@
                     <div class="collapse navbar-collapse nav-menu" id="navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="404.html">About us</a></li>
+                            <li><a href="about_us.html">About us</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="news.html">News</a></li>
                             <li><a href="blog.html">Blog</a></li>
-                            <li><a href="404.html">Pages</a></li>
+                            <li><a href="faq.html">Pages</a></li>
                             <li class="active"><a href="contact_us.html">Contact us</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
-        <div class="hero-contact">
+        <div class="pages">
         </div>
     </section>
     <section class="contact">
@@ -74,18 +74,31 @@
             </div>
             <form action="#" name="contact-form">
                 <ul>
-                    <li><input type="text" name="name" placeholder="Name *"></li>
-                    <li><input type="email" name="email" placeholder="Email address *"></li>
-                    <li><input type="tel" name="phone" placeholder="Phone number *"></li>
                     <li>
-                        <select name="services">
-                            <option disabled selected>Service *</option>
+                        <input id="contact-name" type="text" name="name" required>
+                        <label for="contact-name">Name <span>*</span></label>
+                    </li>
+                    <li>
+                        <input id="contact-email" type="email" name="email" required>
+                        <label for="contact-email">Email Address <span>*</span></label>
+                    </li>
+                    <li>
+                        <input id="contact-tel" type="tel" name="phone" required>
+                        <label for="contact-tel">Phone number <span>*</span></label>
+                    </li>
+                    <li>
+                        <select id="contact-services" name="services" required>
+                            <option disabled selected></option>
                             <option value="service1">service 1</option>
                             <option value="service2">service 2</option>
                             <option value="service3">service 3</option>
                         </select>
+                        <label for="contact-services">Service <span>*</span></label>
                     </li>
-                    <li><textarea placeholder="Message *"></textarea></li>
+                    <li>
+                        <textarea id="contact-message" required></textarea>
+                        <label for="contact-message">Message <span>*</span></label>
+                    </li>
                 </ul>
                 <input class="btn" type="submit" value="Submit Now">
             </form>
@@ -120,7 +133,7 @@
                     <h3>Navigation</h3>
                     <ul class="navigation">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="404.html">About us</a></li>
+                        <li><a href="about_us.html">About us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="testimonials.html">Testimonial</a></li>
                         <li><a href="blog.html">Blog</a></li>
@@ -132,15 +145,15 @@
                     <form action="#" class="form-footer" name="form-footer">
                         <ul class="flex-content">
                             <li class="name">
-                                <input id="name" type="text" name="name">
+                                <input id="name" type="text" name="name" required>
                                 <label for="name">Name <span>*</span></label>
                             </li>
                             <li class="email">
-                                <input id="email" type="email" name="email">
+                                <input id="email" type="email" name="email" required>
                                 <label for="email">Email <span>*</span></label>
                             </li>
                             <li class="comment">
-                                <textarea id="comment"></textarea>
+                                <textarea id="comment" required></textarea>
                                 <label for="comment">Comment <span>*</span></label>
                             </li>
                         </ul>

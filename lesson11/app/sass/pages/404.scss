@@ -1,9 +1,5 @@
-.error {
+.error-page {
   background: url("../img/bg-error.png") 60% 0 /cover no-repeat, #000;
-  overflow: hidden;
-  .hero-error {
-    padding: 100px 0;
-  }
 }
 .not-found {
   text-align: center;
@@ -33,11 +29,6 @@
 }
 
 @media (min-width: 768px) {
-  .error {
-    .hero-error {
-      padding: 150px 0;
-    }
-  }
   .not-found {
     .section {
       padding: 220px 0;

@@ -1,9 +1,6 @@
 .news-page {
   background: url("../img/bg-news.png") 50% 0 /cover no-repeat, #000;
   overflow: hidden;
-  .hero-news-page {
-    padding: 100px 0;
-  }
 }
 
 .news-main {
@@ -82,14 +79,6 @@
       time {
         font-size: 12px;
       }
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .news-page {
-    .hero-news-page {
-      padding: 150px 0;
     }
   }
 }

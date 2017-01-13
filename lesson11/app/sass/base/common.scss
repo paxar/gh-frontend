@@ -11,6 +11,10 @@ a {
   display: flex;
 }
 
+.pages {
+  padding: 100px 0;
+}
+
 .title {
   color: $color-heading;
   h2 {
@@ -33,6 +37,9 @@ p {
 }
 
 @media (min-width: 768px) {
+  .pages {
+    padding: 150px 0;
+  }
   .title {
     h2 {
       font-size: 30px;

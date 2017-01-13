@@ -1,9 +1,6 @@
 .about-page {
   background: url("../img/bg-about.png") 50% 0 /cover no-repeat, #000;
   overflow: hidden;
-  .hero-about-page {
-    padding: 100px 0;
-  }
 }
 
 .about-us {
@@ -72,11 +69,6 @@
 }
 
 @media (min-width: 768px) {
-  .about-page {
-    .hero-about-page {
-      padding: 150px 0;
-    }
-  }
   .our-views {
     h3 {
       margin-top: 0;

@@ -1,9 +1,6 @@
-.reviews {
+.reviews-page {
   background: url("../img/bg-testimonials.png") 50% 0 /cover no-repeat, #000;
   overflow: hidden;
-  .hero-comment {
-    padding: 100px 0;
-  }
 }
 .testimonials {
   li:nth-child(even) {
@@ -73,6 +70,9 @@
 
 .post-comments {
   ul {
+    li {
+      position: relative;
+    }
     margin-top: 15px;
     input, textarea {
       display: block;
@@ -85,13 +85,33 @@
       text-transform: uppercase;
       outline: none;
       resize: none;
-      &::-webkit-input-placeholder {
-        color: $color-content;
+      color: $color-content;
+      &:focus + label {
+        display: none;
+      }
+      &:valid + label {
+        display: none;
+      }
+    }
+    label {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font: 400 13px $font-content;
+      text-transform: uppercase;
+      color: $color-content;
+      cursor: text;
+      span {
+        color: $color-primary;
       }
     }
     textarea {
       height: 150px;
       margin-bottom: 15px;
+      & + label {
+        top: 25px;
+        left: 35px;
+      }
     }
   }
   .btn {
@@ -100,11 +120,6 @@
 }
 
 @media (min-width: 768px) {
-  .reviews {
-    .hero-comment {
-      padding: 150px 0;
-    }
-  }
   .testimonials {
     .happy-clients {
       position: relative;

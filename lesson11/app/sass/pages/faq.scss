@@ -1,9 +1,6 @@
 .faq-page {
   background: url("../img/bg-faq.png") 50% 0 /cover no-repeat, #000;
   overflow: hidden;
-  .hero-faq-page {
-    padding: 100px 0;
-  }
 }
 
 .faq {
@@ -83,11 +80,6 @@
 }
 
 @media (min-width: 768px) {
-  .faq-page {
-    .hero-faq-page {
-      padding: 150px 0;
-    }
-  }
   .faq {
     .question {
       column-count: 2;
