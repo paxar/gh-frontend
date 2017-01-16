@@ -1,0 +1,52 @@
+.section {
+  padding: 90px 15px;
+}
+
+.flex-content {
+  display: flex;
+}
+
+.container {
+  a {
+    text-decoration: none;
+  }
+}
+
+.title {
+  position: relative;
+  font: 400 25px/49px $font-primary;
+  margin-bottom: 50px;
+  &:after {
+    position: absolute;
+    display: block;
+    border-bottom: 1px solid #000;
+    width: 200px;
+    top: 10px;
+  }
+}
+
+h3 {
+  font: 400 24px/24px $font-primary;
+  color: $color-font-content;
+  cursor: pointer;
+}
+p {
+  font: 400 13px/24px $font-primary;
+}
+
+@media (min-width: 768px) {
+  .title {
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+}

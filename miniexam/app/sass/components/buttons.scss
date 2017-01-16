@@ -1,0 +1,36 @@
+.btn {
+  display: block;
+  min-width: 150px;
+  height: 32px;
+  padding: 5px;
+  border-radius: 10px;
+  background: transparent;
+  border: 3px solid $color-primary;
+  font: 700 16px $font-hero;
+  text-transform: uppercase;
+  color: $color-primary;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+  &:hover, &.active-btn {
+    outline: none;
+    background: $color-primary;
+    color: $color-font-hero;
+  }
+  &:focus {
+    outline: none;
+    //color: $color-heading;
+  }
+  &:active:focus {
+    outline: none;
+    //color: $color-heading;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    min-width: 170px;
+    height: 42px;
+    padding: 9px;
+    font-size: 18px;
+  }
+}

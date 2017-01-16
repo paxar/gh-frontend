@@ -1,0 +1,73 @@
+.main-nav {
+  background: $color-primary;
+  position: relative;
+  margin: 0;
+  padding: 10px 0 25px;
+  z-index: 1;
+}
+.nav-header {
+  .logo {
+    float: left;
+    width: 182px;
+    height: 45px;
+    overflow: hidden;
+  }
+  .nav-btn {
+    float: right;
+    padding: 0;
+    margin: 15px 0 0 0;
+    font-size: 23px;
+  }
+}
+.nav-menu {
+  position: absolute;
+  margin-top: 66px;
+  width: 100%;
+  background: $color-primary;
+  a {
+    font: 700 14px/24px $font-primary;
+    display: block;
+    padding: 10px 15px;
+    color: $color-font-hero;
+    &:hover {
+      background: #fc7d7d;
+    }
+  }
+  .active {
+    background: #fc7d7d;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    padding: 20px 0;
+    .nav-menu {
+      float: right;
+      position: inherit;
+      margin: 15px -25px;
+      background: none;
+      width: auto;
+      a {
+        margin: 0 5px;
+        padding: 5px 10px;
+        &:hover {
+          border-radius: 10px;
+        }
+      }
+      .active {
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .main-nav {
+    .nav-menu {
+      margin: 15px -35px;
+      a {
+        padding: 5px 15px;
+      }
+    }
+  }
+}

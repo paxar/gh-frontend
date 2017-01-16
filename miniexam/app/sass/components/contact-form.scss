@@ -1,0 +1,24 @@
+.contact-form {
+  background-color: #eaeff3;
+  overflow: hidden;
+  ul {
+    li {
+      position: relative;
+    }
+    input, textarea, select {
+      width: 100%;
+      margin-top: 30px;
+      padding: 5px;
+      background: $color-font-hero;
+      border: none;
+      border-radius: 15px;
+      text-transform: uppercase;
+      outline: none;
+      resize: none;
+      color: #757c81;
+    }
+    textarea {
+      height: 200px;
+    }
+  }
+}
