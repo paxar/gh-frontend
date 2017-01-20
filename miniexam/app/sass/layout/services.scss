@@ -1,11 +1,12 @@
 .services {
-  background: $color-bg-content;
-  text-align: center;
-  h3 {
-    margin: 15px 0;
+  background: $color-section;
+  overflow: hidden;
+  ul {
+    padding-top: 70px;
+    text-align: center;
+    h3 {
+      color: #000;
+      padding: 20px;
+    }
   }
-}
-
-@media (min-width: 768px) {
-
 }

@@ -1,67 +1,59 @@
 .hero {
-  background: #fff;
-  overflow: hidden;
-  color: $color-font-hero;
+  color: #000;
   .flex-content {
+    padding: 150px 0;
     flex-wrap: wrap;
   }
-  .hero-section {
-    padding: 150px 15px;
-  }
  .intro-hero {
+   margin-bottom: 20px;
    .welcome {
-     font: 700 48px/48px $font-hero;
+     font: 700 45px/54px $font-hero;
      text-transform: uppercase;
-     color: $color-font-content;
+     color: #000;
      span {
        display: block;
-       clear: right;
-       font-size: 30px;
+       font-size: 25px;
      }
    }
    .intro {
-     font: 700 13px/24px $font-hero;
-     color: $color-font-content;
+     display: block;
+     margin-bottom: 40px;
+     color: #000;
    }
    .btn {
      float: left;
-     margin: 10px;
+     margin: 5px;
    }
  }
-  .title-hero {
-    text-align: center;
-    img {
-      margin-top: 50px;
-      width: 70%;
-    }
+  img {
+    width: 100%;
   }
 }
+
 
 @media (min-width: 768px) {
   .hero {
     .flex-content {
-      align-items: flex-start;
-    }
-    .hero-section {
       padding: 250px 0;
+      align-items: flex-end;
     }
+    .intro-hero {
+      margin-bottom: 0;
+      .welcome {
+        font-size: 65px;
+        span {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
     .intro-hero {
       .welcome {
         font-size: 72px;
-        p {
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 24px;
-        }
-      }
-      .intro {
-        font-size: 15px;
-      }
-    }
-    .title-hero {
-      img {
-        margin: 0;
-        width: 100%;
       }
     }
   }

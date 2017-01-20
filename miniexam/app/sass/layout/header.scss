@@ -1,6 +1,6 @@
 .main-nav {
-  background: $color-primary;
   position: relative;
+  background: $color-primary;
   margin: 0;
   padding: 10px 0 25px;
   z-index: 1;
@@ -9,7 +9,7 @@
   .logo {
     float: left;
     width: 182px;
-    height: 45px;
+    height: 43px;
     overflow: hidden;
   }
   .nav-btn {
@@ -17,24 +17,31 @@
     padding: 0;
     margin: 15px 0 0 0;
     font-size: 23px;
+    color: #e8e8e8;
   }
 }
-.nav-menu {
-  position: absolute;
-  margin-top: 66px;
-  width: 100%;
-  background: $color-primary;
-  a {
-    font: 700 14px/24px $font-primary;
-    display: block;
-    padding: 10px 15px;
-    color: $color-font-hero;
-    &:hover {
-      background: #fc7d7d;
+
+.main-nav {
+  .nav-menu {
+    position: absolute;
+    margin-top: 66px;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    .active a {
+      border-radius: 10px 9px 9px 10px;
+      background-color: #fc7d7d;
     }
-  }
-  .active {
-    background: #fc7d7d;
+    a {
+      display: block;
+      padding: 3px 15px;
+      margin: 0 5px;
+      font: 700 14px/24px $font-primary;
+      color: #e8e8e8;
+      &:hover {
+        border-radius: 10px 9px 9px 10px;
+        background-color: #fc7d7d;
+      }
+    }
   }
 }
 
@@ -47,16 +54,6 @@
       margin: 15px -25px;
       background: none;
       width: auto;
-      a {
-        margin: 0 5px;
-        padding: 5px 10px;
-        &:hover {
-          border-radius: 10px;
-        }
-      }
-      .active {
-        border-radius: 10px;
-      }
     }
   }
 }
@@ -65,9 +62,6 @@
   .main-nav {
     .nav-menu {
       margin: 15px -35px;
-      a {
-        padding: 5px 15px;
-      }
     }
   }
 }

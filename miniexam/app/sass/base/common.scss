@@ -1,5 +1,5 @@
 .section {
-  padding: 90px 15px;
+  padding: 50px 15px 90px;
 }
 
 .flex-content {
@@ -14,39 +14,31 @@
 
 .title {
   position: relative;
-  font: 400 25px/49px $font-primary;
-  margin-bottom: 50px;
+  text-align: center;
+  font: 400 24px/49px $font-primary;
   &:after {
+    content: '';
     position: absolute;
-    display: block;
-    border-bottom: 1px solid #000;
-    width: 200px;
-    top: 10px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid;
+    width: 250px;
   }
 }
 
 h3 {
-  font: 400 24px/24px $font-primary;
-  color: $color-font-content;
-  cursor: pointer;
+  font: 400 18px/24px $font-primary;
 }
 p {
-  font: 400 13px/24px $font-primary;
+  font: 400 13px/18px $font-primary;
 }
 
 @media (min-width: 768px) {
   .title {
-    h2 {
-      font-size: 30px;
-    }
-    p {
-      font-size: 16px;
-    }
+    font-size: 30px;
   }
   h3 {
-    font-size: 16px;
-  }
-  p {
-    font-size: 14px;
+    font-size: 24px;
   }
 }
