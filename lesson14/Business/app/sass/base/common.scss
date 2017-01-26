@@ -1,0 +1,28 @@
+.section {
+  padding: 50px 15px;
+}
+
+.flex-content {
+  display: flex;
+}
+
+.container {
+  a {
+  	text-decoration: none;
+  }
+}
+
+.title {
+}
+
+h3 {
+	font: 700 14px/24px 'Aria';
+  	text-transform: uppercase;
+  	color: #000;
+  	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .title {
+  }
+}

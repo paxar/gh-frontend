@@ -1,0 +1,15 @@
+.footer {
+  background-color: #2a2b2c;
+  overflow: hidden;
+  .copy {
+    display: block;
+    margin: 10px 0 30px;
+    font: 600 13px/24px #000;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+  }
+}
