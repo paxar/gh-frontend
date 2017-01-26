@@ -8,12 +8,11 @@ header {
 .main-nav {
   position: relative ;
   margin: 0;
-  padding: 10px 0 25px;
-  border-bottom: 1px solid rgba(221, 228, 234, 0.15);
+  padding: 25px 0 20px;
   .nav-btn {
     float: right;
     padding: 0;
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
     background: transparent;
     border: transparent;
     font-size: 23px;
@@ -47,24 +46,19 @@ header {
   .nav-btn {
     margin: 25px;
   }
-  .active a {
-    font-weight: 700;
-    color: #fff;
-  }
   a {
     display: block;
     padding: 10px 15px;
-    font-size: 14px;
+    font: 600 16px/24px $font-primary;
     text-transform: uppercase;
-    font-weight: 600;
     color: #fff;
-    &:hover {
-     color: #fff;
-    }
   }
 }
 
 @media (min-width: 992px) {
+  .main-nav {
+    padding: 45px 0 40px;
+  }
   .flex-content {
     flex-direction: row;
   }
