@@ -16,10 +16,10 @@ $('#open-nav').click(function () {
 });
 
 $(window).scroll(function(){
-    if($(this).scrollTop()>1){
+    if($(this).scrollTop()>320){
         $('header').css({'background':'rgba(34,34,34,0.9)'});
     }
-    else if ($(this).scrollTop()<1){
+    else if ($(this).scrollTop()<320){
         $('header').css({'background':'none'});
     }
 });
