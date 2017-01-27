@@ -4,6 +4,13 @@ header {
   right: 0;
   top: 0;
   z-index: 1;
+  .flex-content {
+    flex-flow: column wrap;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .main-nav {
   position: relative ;
@@ -29,13 +36,6 @@ header {
     overflow: hidden;
   }
 }
-.flex-content {
-  flex-flow: column wrap;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
 .nav-menu {
   position: absolute;
   width: 100%;
@@ -56,10 +56,12 @@ header {
 }
 
 @media (min-width: 992px) {
+  header {
+    .flex-content {
+      flex-direction: row;
+    }
+  }
   .main-nav {
     padding: 45px 0 40px;
-  }
-  .flex-content {
-    flex-direction: row;
   }
 }

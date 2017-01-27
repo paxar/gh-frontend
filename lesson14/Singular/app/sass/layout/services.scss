@@ -3,6 +3,9 @@
   overflow: hidden;
   li {
     margin-bottom: 60px;
+    p {
+      font: 400 13px/18px $font-primary;
+    }
   }
   .icon-services {
     width: 42px;
