@@ -1,5 +1,8 @@
+body {
+  color: $color-content;
+}
 .section {
-  padding: 50px 15px;
+  padding: 70px 15px;
 }
 
 .flex-content {
@@ -13,16 +16,30 @@
 }
 
 .title {
-}
-
-h3 {
-	font: 700 14px/24px 'Aria';
-  	text-transform: uppercase;
-  	color: #000;
-  	cursor: pointer;
+  position: relative;
+  margin-bottom: 60px;
+  text-align: center;
+  h2 {
+    font: 700 36px/32px $font-primary;
+  }
+  p {
+    font: 300 16px/32px $font-primary;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 47px;
+      left: 50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+      border-bottom: 5px solid $color-content;
+    }
+  }
 }
 
 @media (min-width: 768px) {
+  .section {
+    padding: 100px 15px;
+  }
   .title {
   }
 }

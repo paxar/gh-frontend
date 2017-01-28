@@ -1,33 +1,43 @@
 .hero {
   position: relative;
-  background: url("../img/bg-hero.png") 50% 0 /cover no-repeat, #fff; //linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-  height: 100vh;
+  text-align: center;
+  background: url("../img/bg-hero.png") 65% 90% /cover no-repeat, #1287bf;
+  padding: 120px 0 170px;
   overflow: hidden;
   color: #fff;
- .intro-hero {
-   position: absolute;
-   text-align: center;
-   top: 50%;
-   left: 50%;
-   transform: translateX(-50%) translateY(-50%);
-   .welcome {
-   		font: 800 25px/54px 'Aria';
-     	text-transform: uppercase;
-   }
-   .intro {
-     display: block;
-     font: 800 25px/54px 'Aria';
-     margin-bottom: 40px;
-   }
- }
+  z-index: 7;
+  .welcome {
+    font: 700 48px $font-primary;
+  }
+  .intro {
+    display: block;
+    font: 300 30px $font-primary;
+    margin-bottom: 30px;
+  }
+  .btn-hero {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    border: 0;
+    background-color: #f8cd53;
+    border-radius: 6px;
+    font: 700 18px $font-primary;
+    text-transform: uppercase;
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 @media (min-width: 768px) {
   .hero {
-  }
-}
-
-@media (min-width: 992px) {
-  .hero {
+    padding: 180px 0 230px;
+    .btn-hero {
+      width: 330px;
+      height: 69px;
+      font-size: 23px;
+    }
   }
 }
