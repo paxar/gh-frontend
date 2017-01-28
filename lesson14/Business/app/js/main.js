@@ -11,3 +11,7 @@ $(window).scroll(function() {
         $('.hero').css({'margin-top':'0'});
     }
 });
+
+$(".form-down, .close-form").click(function(){
+    $(".contact-form").slideToggle(500);
+});

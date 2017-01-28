@@ -27,6 +27,8 @@
           font: 400 20px $font-primary;
         }
         p::first-letter {
+          font-family: 'Georgia' sans-serif;
+          font-weight: 700;
           font-size: 60px;
         }
       }
