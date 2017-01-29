@@ -1,7 +1,7 @@
 .foot {
   background: $color-primary;
   overflow: hidden;
-  .section {
+  &.section {
     padding: 50px 0;
   }
   .flex-content {

@@ -24,9 +24,13 @@
     background-color: #f8cd53;
     border-radius: 6px;
     font: 700 18px $font-primary;
+    transition: 0.3s all ease-out;
     text-transform: uppercase;
     &:focus {
       outline: none;
+    }
+    &:hover {
+      background: $color-primary;
     }
   }
 }

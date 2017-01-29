@@ -11,6 +11,7 @@
       a {
         font: 400 15px $font-primary;
         color: $color-content;
+        cursor: pointer;
         i {
           font-size: 18px;
           margin-right: 10px;
@@ -36,7 +37,7 @@
 
 .main-nav {
   position: relative;
-  top: 40px;
+  margin-top: 40px;
   width: 100%;
   background: #fff;
   padding: 15px 0 25px;
@@ -83,14 +84,24 @@
      color: $color-primary;
     }
   }
-  li.consultation {
-    display: block;
-    width: 140px;
-    text-align: center;
-    background: $color-primary;
-    border-radius: 4px;
+}
+.consultation {
+  float: right;
+  width: 140px;
+  height: 30px;
+  margin: 11px 20px 0;
+  padding: 7px;
+  text-align: center;
+  font: 700 14px $font-primary;
+  background: $color-primary;
+  border-radius: 4px;
+  a {
+    color: #fff;
+  }
+  &:hover {
+    background: #fff;
     a {
-      color: #fff;
+      color: $color-primary;
     }
   }
 }
@@ -112,18 +123,17 @@
         list-style-type: disc;
         padding-left: 0;
         margin-left: 25px;
-        &:first-child, &:last-child {
+        &:first-child{
           list-style: none;
           margin: 0;
         }
       }
-      li.consultation {
-        padding: 5px 0;
-        margin-left: 10px;
-      }
       a {
         padding: 0;
       }
+    }
+    .consultation {
+      margin: 11px 0 11px 15px;
     }
   }
 }
@@ -140,6 +150,9 @@
         font-size: 15px;
         padding: 0 10px;
       }
+    }
+    .consultation {
+      margin: 11px 0 11px 30px;
     }
   }
 }

@@ -1,17 +1,17 @@
-var  mn = $(".main-nav");
-mns = "main-nav-scrolled";
-hdr = $('.topbar').height();
+var  main_nav = $(".main-nav");
+main_nav_scrolled = "main-nav-scrolled";
+topbar = $('.topbar').height();
 
 $(window).scroll(function() {
-    if( $(this).scrollTop() > hdr ) {
-        mn.addClass(mns);
-        $('.hero').css({'margin-top': '100px'});
+    if( $(this).scrollTop() > topbar ) {
+        main_nav.addClass(main_nav_scrolled).css({'margin-top': '0'});
+        $('.hero').css({'margin-top': '140px'});
     } else {
-        mn.removeClass(mns);
+        main_nav.removeClass(main_nav_scrolled).css({'margin-top': '40px'});
         $('.hero').css({'margin-top':'0'});
     }
 });
 
 $(".form-down, .close-form").click(function(){
-    $(".contact-form").slideToggle(500);
+    $(".form-hide").slideToggle(500);
 });
