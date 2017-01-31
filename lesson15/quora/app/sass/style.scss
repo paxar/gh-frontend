@@ -22,6 +22,8 @@
 
 
 @import "partials/header";
+@import "partials/hero";
+@import "partials/about";
 
 
 @import "partials/footer";
@@ -37,6 +39,14 @@
   border-radius: 0;
   border-bottom: 1px solid rgba(221, 228, 234, 0.2);
   @include transition(1s);
+  .navbar-nav {
+    float: none;
+    text-align: center;
+  }
+  .navbar-nav li {
+    float: none;
+    display: inline-block;
+  }
   .navbar-collapse{
     overflow: hidden;
     max-height: 400px;

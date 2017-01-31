@@ -1,0 +1,30 @@
+.hero-bg{
+  background:#ececec url("../img/bg-hero.png") center /cover no-repeat;
+}
+
+.hero{
+  padding: 100px 0;
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+  .hero-title{
+    margin: 0 auto;
+    display: block;
+    max-width: 680px;
+    text-align: center;
+    font: italic 30px/60px $lato;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero{
+    padding: 215px 0;
+    .hero-title{
+      font-size: 44px;
+    }
+
+  }
+}
