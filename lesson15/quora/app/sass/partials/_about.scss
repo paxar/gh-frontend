@@ -8,8 +8,8 @@
     display: block;
     bottom: 0px;
     border-top: 14vw solid transparent;
-    border-right: 50vw solid green;
-    border-left: 50vw solid green;
+    border-right: 50vw solid #FFFFFF;
+    border-left: 50vw solid #FFFFFF;
   }
 }
 
@@ -38,14 +38,21 @@
     margin-bottom: 30px;
     background-color: #ffcc00;
     text-align: center;
+
+
     &:after{
       content: '';
       position: absolute;
       display: block;
       bottom: -34px;
-      border-top: 35px solid #ffcc00;
+      border-top: 35px solid #ffcc00 ;
       border-right: 70px solid transparent;
       border-left: 70px solid transparent;
+
+
+
+
+
     }
     &:before{
       content: '';
