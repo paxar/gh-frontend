@@ -4,10 +4,10 @@
   &:after {
     content: '';
     position: absolute;
-    //right: 50%;
+    display: block;
     bottom: 0px;
-    border: 20px solid transparent;
-    border-bottom: 20px solid green;
-    border-left: 20px solid green;
+    border-top: 14vw solid transparent;
+    border-right: 50vw solid green;
+    border-left: 50vw solid green;
   }
 }
