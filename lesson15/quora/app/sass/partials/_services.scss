@@ -1,0 +1,50 @@
+.services{
+  padding: 10vh 0 18vh;
+  background:#ffffff url("../img/bg-services.png") center /cover no-repeat;
+
+  .title{
+    padding-top: 30px;
+    color: #fff;
+  }
+}
+
+.services-item{
+  text-align: center;
+  .item-icon{
+    position: relative;
+    width: 100px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: #ffcc00;
+    text-align: center;
+    &:after{
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: -27px;
+      border-top: 28px solid #ffcc00 ;
+      border-right: 50px solid transparent;
+      border-left: 50px solid transparent;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      display: block;
+      top: -27px;
+      border-bottom: 28px solid #ffcc00;
+      border-right: 50px solid transparent;
+      border-left: 50px solid transparent;
+    }
+    i{
+      font-size: 50px;
+      line-height: 60px;
+      color: #ffffff;
+    }
+
+  }
+  .item-text{
+    font: 600 18px $raleway;
+    color: #fff;
+  }
+}
