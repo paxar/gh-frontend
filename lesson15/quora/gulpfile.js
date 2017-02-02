@@ -47,6 +47,7 @@ gulp.task('scripts', function() {
         'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
         'app/libs/bootstrap-sass/assets/javascripts/bootstrap.min.js',// Берем bootstrap
         'app/libs/isotope/dist/isotope.pkgd.min.js',// Берем isotope
+        'app/libs/masonry/dist/masonry.pkgd.min.js',// Берем masonry
         'app/js/scripts.js' //Берем свои скрипты для страниц
     ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js

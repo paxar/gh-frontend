@@ -1,11 +1,34 @@
 .services{
-  padding: 10vh 0 18vh;
-  background:#ffffff url("../img/bg-services.png") center /cover no-repeat;
+  position: relative;
+  padding: 13vh 0 7vh;
+  background: #19394e url("../img/bg-services.png") center /cover no-repeat;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -1px;
+    border-top: 8vw solid #FFFFFF;
+    border-right: 50vw solid transparent;
+    border-left: 50vw solid transparent;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -1px;
+    border-top: 8vw solid transparent;
+    border-right: 50vw solid #ececec;
+    border-left: 50vw solid #ececec;
+  }
 
   .title{
+
     padding-top: 30px;
     color: #fff;
   }
+
 }
 
 .services-item{
@@ -14,8 +37,8 @@
     position: relative;
     width: 100px;
     height: 60px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 55px auto 30px;
+    //margin-bottom: 30px;
     background-color: #ffcc00;
     text-align: center;
     &:after{
@@ -46,5 +69,22 @@
   .item-text{
     font: 600 18px $raleway;
     color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .services{
+    padding: 16vh 0 18vh;
+    .title{
+      padding-top: 0;
+    }
+  }
+  .services-item{
+    .item-icon{
+      margin: 0 auto 30px;
+    }
+  }
+  .marg-top{
+    margin-top: 70px;
   }
 }

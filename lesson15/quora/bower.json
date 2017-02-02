@@ -17,6 +17,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "masonry": "^4.1.1"
   }
 }
