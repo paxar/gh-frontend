@@ -7,11 +7,11 @@
 /* smooth  scroll   */
 
 $(document).ready(function () {
-    $("#scroll").on("click", "a", function (event) {
+    $("#footer-downside").on("click", "a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 700);
+        $('body,html').animate({scrollTop: top}, 900);
     });
 });
 
