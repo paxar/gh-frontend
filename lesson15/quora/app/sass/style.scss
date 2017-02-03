@@ -42,14 +42,12 @@
   border-radius: 0;
   border-bottom: 1px solid rgba(221, 228, 234, 0.2);
   @include transition(1s);
+
   .navbar-nav {
-    float: none;
+    //float: none;
     text-align: center;
   }
-  .navbar-nav li {
-    float: none;
-    display: inline-block;
-  }
+
   .navbar-collapse{
     overflow: hidden;
     max-height: 400px;
@@ -65,6 +63,14 @@
 
 @media (min-width: 768px) {
 .navbar-default{
+  .navbar-nav {
+    float: none;
+    text-align: center;
+  }
+  .navbar-nav li {
+    float: none;
+    display: inline-block;
+  }
   .navbar-collapse{
     background-color: transparent;
   }

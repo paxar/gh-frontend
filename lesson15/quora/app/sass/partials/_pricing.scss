@@ -14,7 +14,7 @@
 
 }
 
-.price-item-wrap{
+.price-item-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -32,10 +32,10 @@
     font-family: $lato;
     text-align: center;
     color: #000000;
-	i{
-	  font-size: 30px;
-	  color: #ffffff;
-	}
+    i {
+	 font-size: 30px;
+	 color: #ffffff;
+    }
     h3 {
 	 margin: 0;
 	 font: 700 26px/72px $lato;
@@ -80,24 +80,20 @@
     color: #ffffff;
     transition: 0.5s;
 
-    &:hover{
+    &:hover {
 	 color: #009bff;
 	 transition: 0.5s;
     }
-
   }
-
 }
-.blue{
+
+.blue {
   padding-top: 30px;
   background-color: #009bff;
 }
 
 @media (min-width: 630px) {
-  .price-item-wrap{
-
+  .price-item-wrap {
     flex-wrap: nowrap;
-
   }
-
 }

@@ -2,7 +2,7 @@
   background-color: #204359;
 }
 
-.footer-wrap{
+.footer-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -21,20 +21,20 @@
     padding: 15px 0;
   }
 
-  .address{
+  .address {
     display: flex;
     margin-bottom: 15px;
-    i{
-      display: block;
-      margin-top: 5px;
-      margin-right: 5px;
+    i {
+	 display: block;
+	 margin-top: 5px;
+	 margin-right: 5px;
     }
-    span{
-      display: block;
+    span {
+	 display: block;
     }
   }
   .phone,
-  .email{
+  .email {
     display: block;
     margin-bottom: 15px;
     text-decoration: none;
@@ -42,23 +42,23 @@
     color: #9ab3cc;
     transition: 0.5s;
 
-    &:hover{
-      color: #FFFFFF;
-      transition: 0.5s;
+    &:hover {
+	 color: #FFFFFF;
+	 transition: 0.5s;
     }
-    i{
-      margin-right: 5px;
+    i {
+	 margin-right: 5px;
     }
   }
 }
 
-.footer-titles{
+.footer-titles {
   position: relative;
   font: 600 12px $lato;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #ffffff;
-  &:after{
+  &:after {
     content: '';
     display: block;
     width: 100%;
@@ -74,101 +74,101 @@
     padding: 0;
     list-style: none;
     a {
-      font: 400 14px/36px $lato;
-      text-decoration: none;
-      color: #9ab3cc;
-      transition: 0.5s;
-      &:hover {
-        color: #FFFFFF;
-        transition: 0.5s;
-      }
+	 font: 400 14px/36px $lato;
+	 text-decoration: none;
+	 color: #9ab3cc;
+	 transition: 0.5s;
+	 &:hover {
+	   color: #FFFFFF;
+	   transition: 0.5s;
+	 }
     }
   }
 }
 
-.footer-about{
+.footer-about {
   width: 146px;
   .footer-about-list {
     padding: 0;
     list-style: none;
     a {
-      font: 400 14px/36px $lato;
-      text-decoration: none;
-      color: #9ab3cc;
-      transition: 0.5s;
-      &:hover {
-        color: #FFFFFF;
-        transition: 0.5s;
-      }
+	 font: 400 14px/36px $lato;
+	 text-decoration: none;
+	 color: #9ab3cc;
+	 transition: 0.5s;
+	 &:hover {
+	   color: #FFFFFF;
+	   transition: 0.5s;
+	 }
     }
   }
 }
 
-.footer-feedback{
+.footer-feedback {
   width: 270px;
-  .footer-titles:after{
+  .footer-titles:after {
     width: 90px;
   }
-  .feedback-description{
+  .feedback-description {
     font: 400 14px/24px $open-sans;
     color: #748ca5;
   }
-  .feedback-form{
+  .feedback-form {
     display: flex;
-    input{
-      flex-grow: 1;
-      border: none;
-      outline: none;
-      padding-left: 10px;
-      font: italic 14px $open-sans;
-      color: #a6a6a6;
+    input {
+	 flex-grow: 1;
+	 border: none;
+	 outline: none;
+	 padding-left: 10px;
+	 font: italic 14px $open-sans;
+	 color: #a6a6a6;
     }
-    .feedback-form-btn{
-      border: none;
-      outline: none;
-      width: 48px;
-      height: 40px;
-      background-color: #009bff;
-      transition: 0.5s;
+    .feedback-form-btn {
+	 border: none;
+	 outline: none;
+	 width: 48px;
+	 height: 40px;
+	 background-color: #009bff;
+	 transition: 0.5s;
 
-      &:hover{
-        background-color: #ffcc00;
-        transition: 0.5s;
-      }
-      i{
-        line-height: 40px;
-        color: #FFFFFF;
-      }
+	 &:hover {
+	   background-color: #ffcc00;
+	   transition: 0.5s;
+	 }
+	 i {
+	   line-height: 40px;
+	   color: #FFFFFF;
+	 }
     }
   }
-  .feedback-socicon-list{
+  .feedback-socicon-list {
     padding: 20px 0;
     list-style: none;
-    li{
-      display: inline-block;
-      a{
-        margin-right: 10px;
-        text-decoration: none;
-      }
-      i{
-        color: #94abc3;
-        font-size: 18px;
-        transition: 0.5s;
-        &:hover{
-          color: #009bff;
-          transition: 0.5s;
-        }
-      }
+    li {
+	 display: inline-block;
+	 a {
+	   margin-right: 10px;
+	   text-decoration: none;
+	 }
+	 i {
+	   color: #94abc3;
+	   font-size: 18px;
+	   transition: 0.5s;
+	   &:hover {
+		color: #009bff;
+		transition: 0.5s;
+	   }
+	 }
     }
   }
 }
 
-.footer-downside{
+.footer-downside {
   position: relative;
   padding: 40px 0 30px;
   border-top: 1px solid #4a627c;
   text-align: center;
-  .footer-up-btn{
+  .footer-up-btn {
     position: absolute;
     top: -30px;
     left: 50%;
@@ -180,18 +180,17 @@
     text-decoration: none;
     transition: 0.5s;
 
-    &:hover{
-      background-color: #009bff;
-      transition: 0.5s;
-
+    &:hover {
+	 background-color: #009bff;
+	 transition: 0.5s;
     }
-    i{
-      font-size: 20px;
-      line-height: 52px;
-      color: #FFFFFF;
+    i {
+	 font-size: 20px;
+	 line-height: 52px;
+	 color: #FFFFFF;
     }
   }
-  span{
+  span {
     font: 400 11px $open-sans;
     text-transform: uppercase;
     color: #748ca5;

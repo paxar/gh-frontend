@@ -1,23 +1,20 @@
-.projects{
-  //padding-bottom: 200px;
-
+.projects {
 }
 
-.projects-item{
+.projects-item {
   position: relative;
   overflow: hidden;
-  .item-text-wrap{
+  .item-text-wrap {
     padding: 80px 0;
   }
 
-
-  .item-title{
+  .item-title {
     margin: 0;
     font: 700 20px/28px $raleway;
     text-transform: uppercase;
     color: #333;
   }
-  .item-info{
+  .item-info {
     margin: 0;
     padding: 20px 0;
     padding-right: 35px;
@@ -25,23 +22,49 @@
     color: #6e6e6e;
   }
 
-  .projects-item-btn{}
-
-  .item-image{
+  .projects-item-btn {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #009aff;
+    &:after {
+	 position: absolute;
+	 content: '';
+	 right: -14px;
+	 top: 1px;
+	 border-top: 14px solid transparent;
+	 border-bottom: 14px solid transparent;
+	 border-left: 14px solid #FFFFFF;
+    }
+    .triangle {
+	 position: absolute;
+	 content: '';
+	 right: -15px;
+	 top: 0;
+	 border-top: 15px solid transparent;
+	 border-bottom: 15px solid transparent;
+	 border-left: 15px solid #009aff;
+    }
+    a {
+	 display: block;
+	 text-align: right;
+	 font: 400 12px/30px $lato;
+	 text-decoration: none;
+	 color: #009aff;
+    }
+  }
+  .item-image {
     display: none;
     position: absolute;
     right: 0;
     width: 40%;
-
   }
-
-
 }
 
-.slider-nav{
+.slider-nav {
   overflow: hidden;
   text-align: center;
-  .dot{
+  .dot {
     width: 12px;
     height: 12px;
     display: inline-block;
@@ -49,17 +72,15 @@
     border-radius: 50%;
     background-color: #dfdfdf;
   }
-  .active{
+  .active {
     background-color: #009bff;
   }
 }
 
 @media (min-width: 768px) {
-  .projects-item{
-    .item-image{
-      display: block;
-
+  .projects-item {
+    .item-image {
+	 display: block;
     }
   }
-
 }
