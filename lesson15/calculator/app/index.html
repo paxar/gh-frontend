@@ -3,57 +3,63 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="css/libs.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+
     </head>
     <body>
 
-        <form name="Calculation" id="calc" action="">
-            <table class="Table" cellpadding="2" cellspacing="2">
+        <form class="calculator" name="calculator" action="">
+            <table class="table" >
                 <tr>
-                    <td colspan=5 align=middle>
-                        <input class="display" name="ReadOut" type="Text" size=28 value="0" width="250px">
+                    <td class="display-wrap" colspan=4 align=middle>
+                        <input class="display" name="display" type="text" value="0" disabled >
                     </td>
                 </tr>
                 <tr>
-                    <!--<td><input name="btnSeven" type="Button" value="7" onclick="PressedNum(7)"></td>
-                    <td><input name="btnEight" type="Button" value="8" onclick="PressedNum(8)"></td>
-                    <td><input name="btnNine" type="Button" value="9" onclick="PressedNum(9)"></td>
-                    <td><input name="btnClear" type="Button" value="C" onclick="Clear()"/></td>-->
+                    <td onclick="clearing()">AC</td>
+                    <td onclick="inverse()">+/-</td>
+                    <td onclick="percent()">%</td>
+                    <td class="color" onclick="operation('/')">/</td>
+                </tr>
+                <tr>
+                    <td onclick="number(7)"> 7 </td>
+                    <td onclick="number(8)"> 8 </td>
+                    <td onclick="number(9)"> 9 </td>
+                    <td class="color" onclick="operation('*')"> * </td>
+                </tr>
+                <tr>
+                    <td onclick="number(4)"> 4 </td>
+                    <td onclick="number(5)"> 5 </td>
+                    <td onclick="number(6)"> 6 </td>
+                    <td class="color" onclick="operation('-')"> - </td>
+                </tr>
+                <tr>
+                    <td onclick="number(1)"> 1 </td>
+                    <td onclick="number(2)"> 2 </td>
+                    <td onclick="number(3)"> 3 </td>
+                    <td class="color" onclick="operation('+')"> + </td>
+                </tr>
+                <tr>
+                    <td colspan="2" onclick="number(0)"> 0 </td>
+                    <td onclick="number('.')"> . </td>
+                    <td class="color" onclick="compute()"> = </td>
 
-                   <td><input name="btn" type="Button" value="7" onclick="PressedNum(7)"></td>
-                    <td><input name="btn" type="Button" value="8" onclick="PressedNum(8)"></td>
-                    <td><input name="btn" type="Button" value="9" onclick="PressedNum(9)"></td>
-                    <td><input name="btn" type="Button" value="C" onclick="Clear()"/></td>
+                </tr>
 
-                </tr>
-                <tr>
-                    <td><input name="btnFour" type="Button" value="4" onclick="PressedNum(4)"></td>
-                    <td><input name="btnFive" type="Button" value="5" onclick="PressedNum(5)"></td>
-                    <td><input name="btnSix" type="Button" value="6" onclick="PressedNum(6)"></td>
-                    <td><input name="btnPlus" type="Button" value="+" onclick="Operations('+')"/></td>
-                    <td><input name="btnMultiply" type="Button" value="*" onclick="Operations('*')"/></td>
-                </tr>
-                <tr>
-                    <td><input name="btnOne" type="Button" value="1" onclick="PressedNum(1)"></td>
-                    <td><input name="btnTwo" type="Button" value="2" onclick="PressedNum(2)"></td>
-                    <td><input name="btnThree" type="Button" value="3" onclick="PressedNum(3)"></td>
-                    <td><input name="btnMinus" type="Button" value="-" onclick="Operations('-')"/></td>
-                    <td><input name="btnDivide" type="Button" value=" / " onclick="Operations('/')"/></td>
-                </tr>
-                <tr>
-                    <td><input name="btnZero" type="Button" value="0" onclick="PressedNum(0)"></td>
-                    <td><input name="btnDot" type="Button" value="." onclick="PressedNum('.')"></td>
-                    <td colspan="2"><input id="WideBtn" name="btnEquals" type="Button" value="="
-                                           onclick="Operations('=')"></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+
             </table>
         </form>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js.js">
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+        <!--<script src="js/scripts.js"></script>-->
 
-        </script>
+        <script src="js/libs.min.js"></script>
     </body>
 </html>
 

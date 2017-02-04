@@ -21,42 +21,8 @@
 /*   pages styles */
 
 
-@import "partials/header";
+@import "partials/calc";
 
-
-@import "partials/footer";
-
-
-
-
-/*Customize bootstrap*/
-
-.navbar-default {
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid rgba(221, 228, 234, 0.2);
-  @include transition(1s);
-  .navbar-collapse{
-    overflow: hidden;
-    max-height: 400px;
-    padding: 15px 0;
-    border-color: transparent;
-    //background-color: rgba(0,0,0,0.5);
-
-  }
-  .navbar-toggle:hover{
-   background-color: transparent;
-  }
-}
-
-@media (min-width: 768px) {
-.navbar-default{
-  .navbar-collapse{
-    background-color: transparent;
-  }
- }
-}
 
 
 

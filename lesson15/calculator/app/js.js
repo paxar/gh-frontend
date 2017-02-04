@@ -3,84 +3,104 @@
  */
 
 
+var calc = document.calculator;
+
+var a = '';
+
+var b = '';
+
+var c = '';
+
+var oper = '0';
+
+var NewInput = true;
 
 
+function inverse() {
 
-    var ThisCalc  = document.Calculation; //Определяю объект, с которым буду работать
-    var CurResult = 0; //хранит текущий численный результат
-    var IsNewNumFlag = false; //определяю вводится новое число или нет
-    var OperPending = "";// хранит текущее нажатое значение
-
-//функция обрабатывает кнопки с цифрами
-    function PressedNum (Num)
-
-
-    {
-        if (IsNewNumFlag)//если ввод нового числа, т.е. первой его цифры
-        {
-
-            ThisCalc.ReadOut.value = Num;
-            IsNewNumFlag = false;
-        }
-        else {//если не новое
-            if (ThisCalc.ReadOut.value == "0")//если был сброс и стоит 0
-//то заменяем его на новую цифру
-                ThisCalc.ReadOut.value = Num;
-            else
-//иначе дописываем цифры
-                ThisCalc.ReadOut.value += Num;
-        }
+    if (oper = '0') {
+        a = "-" + a;
+        calc.display.value = a;
+    }
+    else {
+        b = "-" + b;
+        calc.display.value = b;
     }
 
-//функция обрабатывает кнопки с арифметическими операциями
-    function Operations (Op)
-    {
-        var Readout = +ThisCalc.ReadOut.value;
+}
 
-        if (IsNewNumFlag && OperPending != "=")
+
+function number(digit) {
+
+    if (NewInput == true)
+    {
+        calc.display.value = digit;
+        a = calc.display.value;
+        NewInput = false;
+    }
+    else {
+        if (oper == '0')
         {
-            ThisCalc.ReadOut.value = CurResult;
+            a += digit;
+            calc.display.value = a;
         }
         else
         {
-            IsNewNumFlag = true;
-
-            if ( '+' == OperPending )
-                CurResult = CurResult + Readout;
-
-            else if ( '-' == OperPending )
-                CurResult = CurResult - Readout;
-            else if ( '/' == OperPending )
-                CurResult = CurResult / Readout;
-            else if ( '*' == OperPending )
-                CurResult = CurResult * Readout;
-            else
-                CurResult = (+Readout);
-            ThisCalc.ReadOut.value = CurResult;
-            OperPending = Op;
+            b += digit;
+            calc.display.value = b;
         }
-
     }
+}
 
+function operation(sign) {
 
-// Очистка текущей цифры
-    function ClearEntry ()
+    oper = sign;
+
+    if (b != '') {
+        compute();
+    }
+}
+
+function compute() {
+
+    var summa = a + oper + b;
+    c = eval(summa);
+    a = c;
+    b = '';
+    calc.display.value = c;
+}
+
+function percent() {
+
+    if (oper == '+')
     {
-        ThisCalc.ReadOut.value = "0";
-        IsNewNumFlag = true;
-
+        c = (a / b) * 100;
     }
-
-// Сброс всех параметров калькулятора
-    function Clear ()
+    else if (oper == '-')
     {
-        Currents = 0;
-        OperPending = "";
-        ClearEntry();
+        c = (a * b) / 100;
+    }
+    else if (oper == '*')
+    {
+        c = a / b;
+    }
+    else {
+        c = b * a;
     }
 
+    calc.display.value = c;
+    b = '';
+}
 
+function clearing() {
 
+    a = '';
+    c = '';
+    b = '';
+    NewInput = true;
+    oper = '0';
+    calc.display.value = '0';
+}
 
 
 
