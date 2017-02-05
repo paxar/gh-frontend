@@ -63,8 +63,15 @@ function operation(sign) { // функция операции
 }
 
 function compute() { //функция вычислений
+    var summa;
 
-    var summa = a + oper + b;
+    if (b == ''){  // реализуем подсчет методом (a * =)
+        summa = a + oper + a;
+    }
+    else {
+        summa = a + oper + b;
+    }
+
     c = eval(summa);
     a = c;
     b = ''; // перенос и обнуление значений для последующих операций
