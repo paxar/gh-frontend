@@ -65,17 +65,14 @@ $(document).ready(function(){
 
     $("#fadeInText").click(function(){
         $(".fade-in").fadeIn(1000);
-
     });
 
     $("#fadeOutText").click(function(){
         $(".fade-out").fadeOut(1000);
-
     });
 
     $("#hideText").click(function(){
         $(".hide").hide();
-
     });
 
     $("#showText").click(function(){
@@ -84,8 +81,6 @@ $(document).ready(function(){
     });
 
     $("#dataAboutMe").click(function(){
-
-            //console.log($(this).position());
            var p = $(this).position();
            var h = $(this).height();
            var w = $(this).width();
@@ -93,11 +88,6 @@ $(document).ready(function(){
 
 
     });
-
-
-
-
-
 });
 
 
