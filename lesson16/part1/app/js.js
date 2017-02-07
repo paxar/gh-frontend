@@ -3,106 +3,101 @@
  */
 
 
-var calc = document.calculator;
+$(document).ready(function(){
 
-var a = '';
+    $("#addClass").click(function () {
+        console.log($(this));
+        $(this).addClass('clicked');
+        console.log($(this));
+    });
 
-var b = '';
+    $("#removeClass").click(function () {
+        console.log($(this));
+        $(this).removeClass('button');
+        console.log($(this));
+    });
 
-var c = '';
+    $("#toggleClass").click(function () {
+        console.log($(this));
+        $(this).toggleClass('pressed');
+        console.log($(this));
+    });
 
-var oper = '0';
+    $("#getAttr").click(function () {
+        console.log($(this).attr("name"));
 
-var NewInput = true;
+    });
+
+    $("#setAttr").click(function () {
+        $(this).attr("name", "attribute-set");
+        console.log($(this).attr("name"));
+    });
+
+    $("#alertOnClick").click(function () {
+        alert('Alert Button');
+
+    });
+
+    $("#triggerAlert").click(function () {
+        $("#alertOnClick").trigger('click')
+
+    });
+
+    $("#cloneThis").click(function(){
+        $(this).clone().appendTo(".clone").append(" (cloned)");
+    });
+
+    $("#closestElement").click(function(){
+        console.log($(this).parent());
+    });
+
+    $("#eachBtnText").click(function(){
+        $("button").each(function(){
+            var a = [];
+            a += $(this).text();
+            console.log(a);
+        });
+    });
+
+    $("#findMe").click(function(){
+        console.log($("body").find("#findMe"));
+    });
+
+    $("#fadeInText").click(function(){
+        $(".fade-in").fadeIn(1000);
+
+    });
+
+    $("#fadeOutText").click(function(){
+        $(".fade-out").fadeOut(1000);
+
+    });
+
+    $("#hideText").click(function(){
+        $(".hide").hide();
+
+    });
+
+    $("#showText").click(function(){
+        $(".show").show();
+
+    });
+
+    $("#dataAboutMe").click(function(){
+
+            //console.log($(this).position());
+           var p = $(this).position();
+           var h = $(this).height();
+           var w = $(this).width();
+       console.log("Top: " + p.top + " Left: " + p.left + " Height: " + h + " Width " + w);
 
 
-function inverse() {
-
-    if (oper = '0') {
-        a = "-" + a;
-        calc.display.value = a;
-    }
-    else {
-        b = "-" + b;
-        calc.display.value = b;
-    }
-
-}
-
-
-function number(digit) {
-
-    if (NewInput == true)
-    {
-        calc.display.value = digit;
-        a = calc.display.value;
-        NewInput = false;
-    }
-    else {
-        if (oper == '0')
-        {
-            a += digit;
-            calc.display.value = a;
-        }
-        else
-        {
-            b += digit;
-            calc.display.value = b;
-        }
-    }
-}
-
-function operation(sign) {
-
-    oper = sign;
-
-    if (b != '') {
-        compute();
-    }
-}
-
-function compute() {
-
-    var summa = a + oper + b;
-    c = eval(summa);
-    a = c;
-    b = '';
-    calc.display.value = c;
-}
-
-function percent() {
-
-    if (oper == '+')
-    {
-        c = (a / b) * 100;
-    }
-    else if (oper == '-')
-    {
-        c = (a * b) / 100;
-    }
-    else if (oper == '*')
-    {
-        c = a / b;
-    }
-    else {
-        c = b * a;
-    }
-
-    calc.display.value = c;
-    b = '';
-}
-
-function clearing() {
-
-    a = '';
-    c = '';
-    b = '';
-    NewInput = true;
-    oper = '0';
-    calc.display.value = '0';
-}
+    });
 
 
 
+
+
+});
 
 

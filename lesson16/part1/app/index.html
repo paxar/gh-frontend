@@ -14,52 +14,83 @@
     </head>
     <body>
 
-        <form class="calculator" name="calculator" action="">
-            <table class="table" >
-                <tr>
-                    <td class="display-wrap" colspan=4 align=middle>
-                        <input class="display" name="display" type="text" value="0" disabled >
-                    </td>
-                </tr>
-                <tr>
-                    <td onclick="clearing()">AC</td>
-                    <td onclick="inverse()">+/-</td>
-                    <td onclick="percent()">%</td>
-                    <td class="color" onclick="operation('/')">/</td>
-                </tr>
-                <tr>
-                    <td onclick="number(7)"> 7 </td>
-                    <td onclick="number(8)"> 8 </td>
-                    <td onclick="number(9)"> 9 </td>
-                    <td class="color" onclick="operation('*')"> * </td>
-                </tr>
-                <tr>
-                    <td onclick="number(4)"> 4 </td>
-                    <td onclick="number(5)"> 5 </td>
-                    <td onclick="number(6)"> 6 </td>
-                    <td class="color" onclick="operation('-')"> - </td>
-                </tr>
-                <tr>
-                    <td onclick="number(1)"> 1 </td>
-                    <td onclick="number(2)"> 2 </td>
-                    <td onclick="number(3)"> 3 </td>
-                    <td class="color" onclick="operation('+')"> + </td>
-                </tr>
-                <tr>
-                    <td colspan="2" onclick="number(0)"> 0 </td>
-                    <td onclick="number('.')"> . </td>
-                    <td class="color" onclick="compute()"> = </td>
+        <button id="addClass">addClass</button>
 
-                </tr>
+        <button id="removeClass" class="button">removeClass</button>
+
+        <button id="toggleClass">toggleClass</button>
+
+        <button id="getAttr" name="click-button">getAttr</button>
+
+        <button id="setAttr">setAttr</button>
+
+        <button id="alertOnClick">alertOnClick</button>
+
+        <button id="triggerAlert">triggerAlert</button>
+
+        <div class="clone">
+            <button id="cloneThis">cloneThis</button>
+        </div>
+
+        <div class="parent-wrap">
+            <button id="closestElement">closestElement</button>
+        </div>
 
 
-            </table>
-        </form>
+        <button id="eachBtnText">eachBtnText</button>
+
+        <div class="one">
+            <div class="two">
+                <button id="findMe">findMe</button>
+            </div>
+        </div>
+
+        <div class="fade">
+            <button id="fadeInText">fadeInText</button>
+
+            <p class="fade-in" style="display: none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper nibh sed augue condimentum egestas.</p>
+        </div>
+
+        <div class="fade">
+            <button id="fadeOutText">fadeOutText</button>
+
+            <p class="fade-out">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper nibh sed augue condimentum egestas.</p>
+        </div>
+
+        <div class="hide-wrap">
+            <button id="hideText">hideText</button>
+
+            <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper nibh sed augue condimentum egestas.</p>
+        </div>
+
+        <div class="show-wrap">
+            <button id="showText">showText</button>
+
+            <p class="show" style="display: none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper nibh sed augue condimentum egestas.</p>
+        </div>
+
+        <button id="dataAboutMe">dataAboutMe</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-        <!--<script src="js/scripts.js"></script>-->
+
 
         <script src="js/libs.min.js"></script>
+        <script src="js.js"></script>
     </body>
 </html>
 

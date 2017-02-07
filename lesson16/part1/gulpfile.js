@@ -63,7 +63,7 @@ gulp.task('css-libs', ['sass'], function() {
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
-    //gulp.watch('app/js/scripts.js', ['scripts']);   // Наблюдение за своими! JS файлами в папке js
+    gulp.watch('app/js/scripts.js', ['scripts']);   // Наблюдение за своими! JS файлами в папке js
 });
 
 gulp.task('clean', function() {
