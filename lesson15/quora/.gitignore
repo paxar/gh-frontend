@@ -1,9 +1,0 @@
-.idea/
-node_modules/
-bower_components/
-app/libs/
-app/css/
-dist/
-.sass-cache
-*.css.map
-
