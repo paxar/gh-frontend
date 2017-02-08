@@ -15,8 +15,6 @@ $(document).ready(function () {
         $("#copy").val($(this).val());
     });
 
-
-
     /*submit*/
 
     $("#form").submit(function(){
@@ -42,10 +40,5 @@ $(document).ready(function () {
     $(".keydown").keyup(function(){
         $(this).css("background-color", "#ff8579");
     });
-
-
-
-
-
 
 });

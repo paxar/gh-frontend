@@ -1,5 +1,5 @@
 /**
- * Created by paxar on 30.01.2017.
+ * Created by paxar on 08.02.2017.
  */
 
 /*---------------CALCULATOR 2----------------*/
@@ -20,14 +20,11 @@ $(document).ready(function () {
 
     $(".number").click(function () {
 
-
-
         if (newInput == true){
             A = $(this).text();
             display = A;
             output();
             newInput = false;
-
         }
         else {
             if (operand == '0') {
@@ -40,7 +37,6 @@ $(document).ready(function () {
                 display = B;
             }
         }
-
            output();
     });
 
@@ -60,8 +56,8 @@ $(document).ready(function () {
     });
 
 
-
     function compute() {
+
         var summa;
 
         if (B == ''){
@@ -99,18 +95,7 @@ $(document).ready(function () {
         output();
     });
 
-    $(".clearing").click(function () {
 
-        A = '';
-        B = '';
-        C = '';
-        newInput = true;
-        operand = '0';
-        display = '0';
-
-        output();
-
-    });
 
 
     $(".percent").click(function () {
@@ -132,9 +117,22 @@ $(document).ready(function () {
         }
 
         display = C;
-        output();
-        b = '';
+        B = '';
 
+        output();
+
+    });
+
+    $(".clearing").click(function () {
+
+        A = '';
+        B = '';
+        C = '';
+        newInput = true;
+        operand = '0';
+        display = '0';
+
+        output();
 
     });
 
