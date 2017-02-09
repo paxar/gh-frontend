@@ -1,3 +1,21 @@
 /*Text styles*/
 
+.title{
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+  font: bold 18px/21px $century-gothic;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffea00;
+  background-color: #424147;
+
+}
+
+.subtitle{
+  font: bold 16px/21px $century-gothic;
+  text-align: center;
+  color: #424146;
+}
+
 

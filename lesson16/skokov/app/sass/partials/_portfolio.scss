@@ -1,0 +1,19 @@
+.portfolio{}
+
+.masonry-wrap{
+  margin: 0 auto;
+  .portfolio-item{
+    max-width: 534px;
+  }
+  img{
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .masonry-wrap{
+    img{
+	 width: auto;
+    }
+  }
+}
