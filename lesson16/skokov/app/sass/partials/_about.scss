@@ -1,0 +1,95 @@
+.about{
+
+  .about-title{
+    font: bold 35px/38px $century-gothic;
+    text-transform: uppercase;
+    text-align: center;
+    color: #424147;
+
+  }
+  .about-subtitle{
+    font: bold 24px/28px $century-gothic;
+    text-align: center;
+    color: #424147;
+  }
+}
+
+.about-items-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about-item{
+  position: relative;
+  width: 250px;
+  height: 285px;
+  text-align: center;
+  background-color: #ffea00;
+  .item-icon{
+    padding: 35px;
+  }
+  .item-title{
+    margin: 0;
+    font: bold 20px/32px $code;
+    letter-spacing: 2px;
+    color: #000;
+  }
+  .item-text{
+    display: block;
+    padding: 27px;
+    font: bold 13px/17px $century-gothic;
+    background-color: #414146;
+    color: #fff;
+
+  }
+  &:hover .hover{
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+
+  .hover{
+    //display: none;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+
+    .hover-text-wrap{
+      position: relative;
+      background-color: #414146;
+      &:before{
+        content: '';
+        position: absolute;
+        top: -10px;
+        right: 23px;
+        border-bottom: 10px solid #414146;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+      }
+
+      .hover-title{
+        display: block;
+        margin: 0;
+        padding: 12px 20px 0;
+        text-align: left;
+        font: bold 20px/23px $code;
+        color: #fff;
+      }
+      .hover-link{
+        display: block;
+        margin-right: 10px;
+        text-align: right;
+        text-decoration: none;
+        font: bold 10px/17px $century-gothic;
+        color: #fff;
+        span{
+          color: #ffea00;
+
+        }
+      }
+    }
+  }
+
+}

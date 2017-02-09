@@ -47,16 +47,21 @@ $(document).ready(function(){
         autoplay: true, //Автозапуск слайдера
         smartSpeed: 1000, //Время движения слайда
         autoplayTimeout: 6000, //Время смены слайда
+        nav: true,
+        dots: false,
+        //navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>'
+        //,'<i class="fa fa-angle-left" aria-hidden="true"></i>']
+        //navContainer: '#nav-custom',
 
         responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
             0: {
                 items: 1
             },
             970: {
-                items: 2
+                items: 6
             },
             1170: {
-                items: 3
+                items: 8
             }
         }
 
