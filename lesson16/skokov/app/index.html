@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 
@@ -10,20 +11,101 @@
         <link rel="stylesheet" href="css/libs.min.css">
         <link rel="stylesheet" href="css/style.css">
 
+        <style type="text/css">
+            .flickr_badge_image {
+                margin: 0px;
+                display: inline;
+            }
+
+            .flickr_badge_image img {
+                border: 0px solid #666666 !important;
+                /*padding: 1px;*/
+                margin: 1px;
+                width: 130px;
+                height: 70px;
+            }
+
+            #flickr_badge_wrapper {
+                width: 400px;
+                text-align: left
+            }
+        </style>
+
 
     </head>
     <body>
 
+        <header class="header">
+
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1 class="header-logo"><a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a></h1>
+
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="faq.html">Pages</a></li>
+                            <li><a href="contacts.html">Contact us</a></li>
+
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+
+        </header>
+
+        <section>
+
+
+        </section>
 
 
 
-        <!---->
+
+<!--<section>
+    <div id="flickr_badge_wrapper">
+        <script type="text/javascript"
+                src="http://www.flickr.com/badge_code_v2.gne?count=6&display=latest&size=s&layout=x&source=user&user=131020649@N06"></script>
+
+    </div>
+
+    <a class="twitter-timeline" data-width="440" data-height="375" data-theme="dark"
+       href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a>
+
+</section>-->
+
+
+
+
+
 
 
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
 
 
         <script src="js/libs.min.js"></script>
+
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
         <!--<script src="js.js"></script>-->
     </body>
 </html>
