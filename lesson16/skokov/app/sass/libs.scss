@@ -1,5 +1,6 @@
 @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
 
-@import "../libs/owl.carousel/src/scss/owl.carousel";
+@import "libs/slick";
 
-@import "../libs/owl.carousel/src/scss/owl.theme.default";
+@import "libs/slick-theme";
+

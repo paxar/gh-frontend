@@ -41,31 +41,53 @@ $(document).ready(function(){
 
 
 
-    $('#clients-carousel').owlCarousel({
-        loop: true, //Зацикливаем слайдер
-        margin: 50, //Отступ от элемента справа в 50px
-        autoplay: true, //Автозапуск слайдера
-        smartSpeed: 1000, //Время движения слайда
-        autoplayTimeout: 6000, //Время смены слайда
-        nav: true,
+    $('#clients-carousel').slick({
         dots: false,
-        //navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>'
-        //,'<i class="fa fa-angle-left" aria-hidden="true"></i>']
-        //navContainer: '#nav-custom',
+        infinite: true,
+        speed: 300,
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        prevArrow: '.carousel-prev',
+        nextArrow: '.carousel-next',
+        //centerMode: true,
+        //centerPadding: '50%',
 
-        responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
-            0: {
-                items: 1
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1
+                }
             },
-            970: {
-                items: 6
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1
+                }
             },
-            1170: {
-                items: 8
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        }
 
+        ]
     });
+
+
+
+
 });
 
 

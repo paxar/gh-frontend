@@ -45,8 +45,8 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
         'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
-        'app/libs/owl.carousel/dist/owl.carousel.js', //Берем Owl.Carousel
         'app/libs/bootstrap-sass/assets/javascripts/bootstrap.min.js',// Берем bootstrap
+        'app/libs/slick-carousel/slick/slick.js', // Берем Slick
         'app/libs/masonry/dist/masonry.pkgd.min.js',// Берем masonry
 
         'app/js/scripts.js' //Берем свои скрипты для страниц
