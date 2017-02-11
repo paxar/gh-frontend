@@ -85,6 +85,28 @@ $(document).ready(function(){
         ]
     });
 
+    $('#hero-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '.hero-carousel-prev',
+        nextArrow: '.hero-carousel-next'
+        //centerMode: true,
+        //centerPadding: '50%',
+
+
+    });
+
+
+    $("#scroll").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 900);
+    });
+
 
 
 
@@ -95,23 +117,4 @@ $(document).ready(function(){
 
 
 
-/*$('#clients-carousel').owlCarousel({
-   /!* loop: true, //Зацикливаем слайдер
-    margin: 50, //Отступ от элемента справа в 50px
-    autoplay: true, //Автозапуск слайдера
-    smartSpeed: 1000, //Время движения слайда
-    autoplayTimeout: 6000, //Время смены слайда
 
-    responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
-        0: {
-            items: 1
-        },
-        970: {
-            items: 2
-        },
-        1170: {
-            items: 3
-        }
-    }*!/
-
-});*/

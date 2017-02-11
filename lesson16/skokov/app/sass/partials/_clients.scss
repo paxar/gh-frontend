@@ -1,31 +1,9 @@
 .clients{
   position: relative;
-
+  padding-bottom: 100px;
 }
 
 .clients-carousel-wrap{
-  .carousel-button{
-    position: absolute;
-    z-index: 10;
-    width: 46px;
-    height: 65px;
-    text-align: center;
-    background-color: #000000;
-    &:hover .fa{
-      color: #ffeb00;
-    }
-    .fa{
-      font-size: 30px;
-      line-height: 65px;
-      color: #FFFFFF;
-    }
-  }
-  .carousel-prev{
-    left: 0;
-  }
-  .carousel-next{
-    right: 0;
-  }
   .clients-carousel-item{
     img{
       margin: 0 auto;
