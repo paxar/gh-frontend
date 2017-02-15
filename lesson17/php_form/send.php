@@ -128,9 +128,10 @@ activity, books, booksnum, comments, position, delivery, difficult)".
 
 echo "</br>" . $sql; // выведем готовый запрос
 
-$res = $base->query($sql); //пытаемся запихнуть это в базу
+$res = mysqli_query($base, $sql); //пытаемся запихнуть это в базу
+
 if ($res) {                 // честно сперто из образца уловие проверки ошибок, ибо без него никак....
-    echo "<p>Дані успішно додано в БД";
+    echo "<p>Дані успішно додано в БД" . "<br>";
 } else {
     echo "Виникла помилка:".$base->error;
 }
