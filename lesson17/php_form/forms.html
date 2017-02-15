@@ -127,7 +127,7 @@
                             <textarea name="comments" id="comments" rows="10" cols="60"></textarea>
                         </li>
                         <li>
-                            <select name="position" multiple size="3" id="multiselect">
+                            <select name="position[]" multiple size="3" id="multiselect">
                                 <option>Первая позиция</option>
                                 <option selected>Вторая позиция</option>
                                 <option>Третья позиция</option>
@@ -151,14 +151,14 @@
                     <i>Выберите категории</i>
                     <ul>
                         <li>
-                            <input type="checkbox" name="eqipment" id="eqipment">
-                            <label for="eqipment">Оборудование</label>
+                            <input type="checkbox" name="delivery[]" id="equipment" value="equipment">
+                            <label for="equipment">Оборудование</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="how to cook dinner" id="cook">
+                            <input type="checkbox" name="delivery[]" id="cook" value="cook">
                             <label for="cook">Как приготовить обеды</label>
                         </li>
-                        <li><input type="checkbox" name="earn millions" id="earn">
+                        <li><input type="checkbox" name="delivery[]" id="earn" value="earn">
                             <label for="earn">Заработай миллион за 2 дня!</label>
                         </li>
                     </ul>
