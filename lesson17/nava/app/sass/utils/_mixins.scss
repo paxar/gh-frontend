@@ -1,0 +1,5 @@
+
+
+@mixin transition($s) {
+  transition-duration: $s;
+}

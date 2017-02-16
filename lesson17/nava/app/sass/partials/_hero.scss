@@ -1,0 +1,70 @@
+.hero-bg{
+  position: relative;
+  background: url("../img/hero-bg.png") center/cover no-repeat;
+
+  .bgvideo {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
+
+  }
+
+}
+
+.hero{
+  padding: 300px 0 ;
+ // position: relative;
+
+
+  .hero-title{
+    position: relative;
+    font: 700 72px/80px $raleway;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $light-text-color;
+
+  }
+  .hero-subtitle{
+    position: relative;
+    font: 400 30px/32px $open-sans;
+    text-align: center;
+    text-transform: uppercase;
+    color: $light-text-color;
+
+
+  }
+
+  .hero-form{           //TODO add border radius
+    .hero-form-input{
+      margin-top: 10px;
+      padding: 15px;
+      outline: none;
+      border: none;
+      font: 400 14px/22px $raleway;
+      color: #000 ;
+      background-color: #FFFFFF;
+    }
+    .hero-form-button{
+      padding: 15px;
+      margin-top: 10px;
+      border: none;
+      font: 400 14px/22px $raleway;
+      text-transform: uppercase;
+      color: $light-text-color;
+      background-color: $brand-color;
+
+
+    }
+  }
+
+
+}
+
+

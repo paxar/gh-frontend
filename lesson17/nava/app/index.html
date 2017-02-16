@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/other-libs/jquery-ui.css">
+
+
+    <style type="text/css">
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="hero-bg">
+    <video autoplay loop muted class="bgvideo" id="bgvideo">
+        <source src="img/waves.mp4" type="video/mp4">
+        </source>
+    </video>
+
+
+    <header class="header">
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1 class="header-logo"><a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                    </h1>
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                    <ul id="scroll" class="nav navbar-nav navbar-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">Blog</a></li>
+                        <li><a href="#footer">About us</a></li>
+                        <li><a href="#footer">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="container">
+
+            <h1 class="hero-title">RESERVE A BOAT NOW!</h1>
+            <p class="hero-subtitle">and set your sails into paradise!</p>
+
+            <form class="hero-form col-xs-12 col-md-offset-2 col-md-8" action="#">
+                <input class="hero-form-input col-xs-12 col-md-8" type="text" name="destination"
+                       placeholder="WHAT IS YOUR DESTINATION, SAILOR?">
+                <button class="hero-form-button col-xs-12 col-md-4"><i class="icon-boat"></i> FIND A BOAT</button>
+            </form>
+
+
+        </div>
+    </section>
+</div>
+
+<section class="destination">
+    <div class="container">
+        <div class="destination-info col-xs-12">
+            <div class="destination-info-item">
+                <span class="item-count">2,300</span>
+                <span class="item-description">Destinations</span>
+            </div>
+            <div class="destination-info-item">
+                <span class="item-count">1,000</span>
+                <span class="item-description">Cities</span>
+            </div>
+            <div class="destination-info-item">
+                <span class="item-count">35,000</span>
+                <span class="item-description">Boats</span>
+            </div>
+            <div class="destination-info-item">
+                <span class="item-count">50,000</span>
+                <span class="item-description">Sailors</span>
+            </div>
+        </div>
+
+        <h2 class="title">EXPLORE OUR TOP DESTINATIONS</h2>
+        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut labore et</p>
+
+
+        <div class="destination-gallery-item mod-test col-xs-8">
+            <div class="img-wrap">
+                <img class="gallery-item-img " src="img/destinations-img1.png" alt="img">
+            </div>
+
+            <a class="gallery-item-link" href="#"><i class="icon-boat"></i>730</a>
+            <div class="gallery-item-info">
+                <h3>Figueira da Foz</h3>
+                <span> Portugal</span>
+            </div>
+
+        </div>
+
+        <div class="destination-gallery-item mod-test col-xs-4">
+            <div class="img-wrap">
+                <img class="gallery-item-img " src="img/destinations-img2.png" alt="img">
+            </div>
+
+            <a class="gallery-item-link" href="#"><i class="icon-boat"></i>730</a>
+            <div class="gallery-item-info">
+                <h3></h3>
+                <span></span>
+            </div>
+
+        </div>
+
+        <div class="destination-gallery-item mod-test col-xs-4">
+            <div class="img-wrap">
+                <img class="gallery-item-img " src="img/destinations-img3.png" alt="img">
+            </div>
+
+            <a class="gallery-item-link" href="#"><i class="icon-boat"></i>730</a>
+            <div class="gallery-item-info">
+                <h3></h3>
+                <span></span>
+            </div>
+
+        </div>
+        <div class="destination-gallery-item mod-test col-xs-4">
+            <div class="img-wrap">
+                <img class="gallery-item-img " src="img/destinations-img4.png" alt="img">
+            </div>
+
+            <a class="gallery-item-link" href="#"><i class="icon-boat"></i>730</a>
+            <div class="gallery-item-info">
+                <h3></h3>
+                <span></span>
+            </div>
+
+        </div>
+        <div class="destination-gallery-item mod-test col-xs-4">
+            <div class="img-wrap">
+                <img class="gallery-item-img " src="img/destinations-img5.png" alt="img">
+            </div>
+
+            <a class="gallery-item-link" href="#"><i class="icon-boat"></i>730</a>
+            <div class="gallery-item-info">
+                <h3></h3>
+                <span></span>
+            </div>
+
+        </div>
+
+
+
+        <!-- HTML-код модального окна -->
+        <div id="myModalBox" class=" modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Заголовок модального окна -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Заголовок модального окна</h4>
+                    </div>
+                    <!-- Основное содержимое модального окна -->
+                    <div class="modal-body">
+                        Содержимое модального окна...
+                    </div>
+                    <!-- Футер модального окна -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</section>
+
+
+<!-------------------SCRIPTS------------------------------------->
+
+<script src="js/libs.min.js"></script>
+<script src="js/other-libs/jquery-ui.js"></script>
+
+<script src="https://use.fontawesome.com/34414cec8f.js"></script>
+
+
+</body>
+</html>
+
+
+
+
