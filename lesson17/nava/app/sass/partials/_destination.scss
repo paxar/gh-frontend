@@ -36,59 +36,5 @@
   }
 }
 
-.destination-gallery-item{
-  height: 360px;
-  margin: 15px 0;
 
 
-  .img-wrap{
-    overflow: hidden;
-    border-radius: 3px;
-  }
-  img {
-    height: 100%;
-
-    transition: 10s ease-out;
-    &:hover{
-      transform: scale(1.5);
-    }
-  }
-
-  .gallery-item-link{
-
-    position: absolute;
-    top: 10px;
-    left: 25px;
-    padding: 8px;
-    font: 700 16px/22px $open-sans;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 3px;
-    color: #ffffff;
-    background-color: $brand-color;
-    i{
-      margin-right: 7px;
-    }
-  }
-  .gallery-item-info{
-    position: absolute;
-    left: 30px;
-    bottom: 10px;
-    color: #ffffff;
-    font-family: Raleway;
-    font-weight: 400;
-    h3{
-      font-size: 30px;
-      line-height: 40px;
-    }
-    span{
-      font-size: 20px;
-      line-height: 30px;
-    }
-
-
-  }
-
-
-
-}

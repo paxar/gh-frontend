@@ -22,6 +22,32 @@ $(document).ready(function(){
     });
 
 
+    // read more button
+
+    $(".destination-item").slice(0, 5).show();
+    $(".destination-btn").on('click', function (e) {
+        e.preventDefault();
+        $(".destination-item:hidden").slice(0, 3).slideDown();
+        if ($(".destination-item:hidden").length == 0) {
+            $(".destination-btn").fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+
+    $(".boats-item").slice(0, 4).show();
+    $(".boats-btn").on('click', function (e) {
+        e.preventDefault();
+        $(".boats-item:hidden").slice(0, 2).slideDown();
+        if ($(".boats-item:hidden").length == 0) {
+            $(".boats-btn").fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+
 
 
 
