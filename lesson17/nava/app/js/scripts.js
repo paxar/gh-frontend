@@ -37,6 +37,21 @@ $(document).ready(function(){
         $("#modal-box-dest-5").modal('show');
     });
 
+    $(".modal-boats-1").click(function() {
+        $("#modal-box-boats-1").modal('show');
+    });
+
+    $(".modal-boats-2").click(function() {
+        $("#modal-box-boats-2").modal('show');
+    });
+
+    $(".modal-boats-3").click(function() {
+        $("#modal-box-boats-3").modal('show');
+    });
+
+    $(".modal-boats-4").click(function() {
+        $("#modal-box-boats-4").modal('show');
+    });
 
     // read more button
 
@@ -208,7 +223,13 @@ $(document).ready(function(){
 
 
 // задаем массив в качестве источника слов для автозаполнения.
-    $( ".hero-form-input" ).autocomplete({source: availableTags});
+    $(".hero-form-input").autocomplete({
+        source: function(request, response) {
+            var results = $.ui.autocomplete.filter(availableTags, request.term);
+
+            response(results.slice(0, 5));
+        }
+    });
 
 
 
