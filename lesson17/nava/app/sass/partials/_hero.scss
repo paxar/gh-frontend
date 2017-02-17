@@ -1,45 +1,14 @@
 .hero-bg{
   position: relative;
+  overflow: hidden;
   background: url("../img/hero-bg.png") center/cover no-repeat;
 
-  .bgvideo {
-    display: none;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
 
-
-  }
 
 }
 
 .hero{
   padding: 300px 0 ;
- // position: relative;
-
-
-  .hero-title{
-    position: relative;
-    font: 700 72px/80px $raleway;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: $light-text-color;
-
-  }
-  .hero-subtitle{
-    position: relative;
-    font: 400 30px/32px $open-sans;
-    text-align: center;
-    text-transform: uppercase;
-    color: $light-text-color;
-
-
-  }
 
   .hero-form{           //TODO add border radius
     .hero-form-input{
@@ -59,6 +28,12 @@
       text-transform: uppercase;
       color: $light-text-color;
       background-color: $brand-color;
+      transition: 0.5s;
+      &:hover{
+        background-color: #c71a1b;
+        transition: 0.5s;
+
+      }
 
 
     }

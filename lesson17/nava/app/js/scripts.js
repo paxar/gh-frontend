@@ -17,8 +17,24 @@ $(document).ready(function(){
 
     // modals windows ----------------------
 
-    $(".mod-test").click(function() {
-        $("#myModalBox").modal('show');
+    $(".modal-dest-1").click(function() {
+        $("#modal-box-dest-1").modal('show');
+    });
+
+    $(".modal-dest-2").click(function() {
+        $("#modal-box-dest-2").modal('show');
+    });
+
+    $(".modal-dest-3").click(function() {
+        $("#modal-box-dest-3").modal('show');
+    });
+
+    $(".modal-dest-4").click(function() {
+        $("#modal-box-dest-4").modal('show');
+    });
+
+    $(".modal-dest-5").click(function() {
+        $("#modal-box-dest-5").modal('show');
     });
 
 

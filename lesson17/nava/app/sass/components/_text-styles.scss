@@ -1,5 +1,24 @@
 /*Text styles*/
 
+.main-title{
+  position: relative;
+  font: 700 72px/80px $raleway;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: $light-text-color;
+
+}
+.main-subtitle{
+  position: relative;
+  font: 400 30px/32px $open-sans;
+  text-align: center;
+  text-transform: uppercase;
+  color: $light-text-color;
+
+
+}
+
 .title{
   font: 400 30px/32px $raleway;
   text-align: center;
