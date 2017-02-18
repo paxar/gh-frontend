@@ -53,6 +53,10 @@ $(document).ready(function(){
         $("#modal-box-boats-4").modal('show');
     });
 
+    $(".owner-button").click(function() {
+        $("#modal-box-owner").modal('show');
+    });
+
     // read more button
 
     $(".destination-item").slice(0, 5).show();
@@ -224,6 +228,14 @@ $(document).ready(function(){
 
 // задаем массив в качестве источника слов для автозаполнения.
     $(".hero-form-input").autocomplete({
+        source: function(request, response) {
+            var results = $.ui.autocomplete.filter(availableTags, request.term);
+
+            response(results.slice(0, 5));
+        }
+    });
+
+    $(".modal-form-input").autocomplete({
         source: function(request, response) {
             var results = $.ui.autocomplete.filter(availableTags, request.term);
 

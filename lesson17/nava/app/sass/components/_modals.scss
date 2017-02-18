@@ -40,6 +40,26 @@
     }
   }
 }
+.modal-form{
+  .form-list{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    li{
+      input{
+        width: 80%;
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font: 400 14px/22px $open-sans;
+        color: #000;
+      }
+
+    }
+  }
+}
 
 
 
@@ -119,5 +139,12 @@
     url("../img/boat-img4.png");
     background-size: cover;
     background-position: center;
+  }
+}
+
+#modal-box-owner{
+  .modal-content{
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%);
   }
 }

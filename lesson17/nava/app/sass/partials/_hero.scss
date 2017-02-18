@@ -8,22 +8,29 @@
 }
 
 .hero{
-  padding: 300px 0 ;
+  padding: 150px 0 300px ;
 
-  .hero-form{           //TODO add border radius
+  .hero-form{
+    margin-top: 65px;
+                        //TODO add border radius
     .hero-form-input{
       margin-top: 10px;
       padding: 15px;
       outline: none;
       border: none;
+      border-radius: 5px;
       font: 400 14px/22px $raleway;
       color: #000 ;
       background-color: #FFFFFF;
+      @media (min-width: 995px) {
+        border-radius:  5px 0 0 5px;
+      }
     }
     .hero-form-button{
       padding: 15px;
       margin-top: 10px;
       border: none;
+      border-radius: 5px;
       font: 400 14px/22px $raleway;
       text-transform: uppercase;
       color: $light-text-color;
@@ -32,7 +39,9 @@
       &:hover{
         background-color: #c71a1b;
         transition: 0.5s;
-
+      }
+      @media (min-width: 995px) {
+        border-radius: 0 5px 5px 0;
       }
 
 

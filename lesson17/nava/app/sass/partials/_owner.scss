@@ -1,15 +1,15 @@
 .owner{
   position: relative;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 160px 0;
   background: url("../img/owner-bg.png") center/cover no-repeat;
   text-align: center;
 
   .owner-button{
     position: relative;
-    margin-top: 30px;
-    padding: 15px 30px;
-    font: 400 14px/22px $raleway;
+    margin-top: 70px;
+    padding: 20px 45px;
+    font: 700 14px/22px $raleway;
     text-transform: uppercase;
     letter-spacing: 1px;
     outline: none;
@@ -21,9 +21,6 @@
     &:hover{
       background-color: #c71a1b;
       transition: 0.5s;
-
     }
-
   }
-
 }

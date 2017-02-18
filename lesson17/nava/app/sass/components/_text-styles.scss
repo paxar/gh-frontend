@@ -2,7 +2,7 @@
 
 .main-title{
   position: relative;
-  font: 700 72px/80px $raleway;
+  font: 700 45px/60px $raleway;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -11,7 +11,7 @@
 }
 .main-subtitle{
   position: relative;
-  font: 400 30px/32px $open-sans;
+  font: 400 24px/30px $open-sans;
   text-align: center;
   text-transform: uppercase;
   color: $light-text-color;
@@ -27,9 +27,21 @@
   color: #343435;
 }
 .subtitle{
+  margin-bottom: 50px;
   font: 400 16px/22px $open-sans;
   text-align: center;
   color: #717171;
 
 }
 
+@media (min-width: 768px) {
+  .main-title{
+    font: 700 72px/80px $raleway;
+
+  }
+  .main-subtitle{
+    font: 400 30px/32px $open-sans;
+
+  }
+
+}
