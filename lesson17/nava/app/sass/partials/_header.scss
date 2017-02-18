@@ -1,5 +1,5 @@
 .header {
-  .container-header{
+  .container-header {
     max-width: 1500px;
     margin: 0 auto;
   }
@@ -10,10 +10,8 @@
     margin-top: 20px;
     @media (min-width: 768px) {
       margin-right: 30px;
-
     }
-
-      li {
+    li {
       a {
         padding: 10px 25px;
         font: 700 16px/22px $raleway;
@@ -21,7 +19,7 @@
         text-transform: uppercase;
         text-decoration: none;
         transition: 0.5s;
-        &:hover{
+        &:hover {
           color: $brand-color;
           transition: 0.5s;
         }
@@ -29,11 +27,12 @@
     }
   }
 }
-.navbar-toggle{
+
+.navbar-toggle {
   margin-top: 25px;
   margin-right: 30px;
   border: none;
-  .icon-bar{
+  .icon-bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -41,7 +40,8 @@
     background-color: #FFFFFF !important;
   }
 }
-.header-btn{
+
+.header-btn {
   max-width: 200px;
   font: 700 16px/22px $raleway;
   padding: 10px 35px !important;
@@ -51,7 +51,7 @@
   color: #FFFFFF;
   background-color: transparent;
   transition: 0.5s;
-  &:hover{
+  &:hover {
     color: $brand-color;
     border-color: $brand-color;
     transition: 0.5s;

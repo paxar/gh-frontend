@@ -63,14 +63,14 @@
       }
     }
   }
-  .socicon-list{
+  .socicon-list {
     margin-top: 30px;
     padding: 0;
     list-style: none;
-    li{
+    li {
       display: inline-block;
     }
-    a{
+    a {
       display: block;
       width: 44px;
       height: 44px;
@@ -80,11 +80,11 @@
       border-radius: 50%;
       background-color: #717171;
       transition: 0.5s;
-      &:hover{
+      &:hover {
         background-color: $brand-color;
         transition: 0.5s;
       }
-      i{
+      i {
         font-size: 20px;
         line-height: 44px;
         color: #FFFFFF;

@@ -1,12 +1,8 @@
-.destination{
+.destination {
   padding-bottom: 80px;
-.subtitle{
-
-
-}
 }
 
-.destination-info{
+.destination-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -16,19 +12,17 @@
   box-shadow: 0 0 30px rgba(52, 52, 52, 0.15);
   border-radius: 5px;
   background-color: #ffffff;
-  .destination-info-item{
+  .destination-info-item {
     margin: 20px;
     text-align: center;
-
-    .item-count{
+    .item-count {
       display: block;
       margin-bottom: 10px;
       font: 700 30px $open-sans;
       text-transform: uppercase;
-
       color: #343434;
     }
-    .item-description{
+    .item-description {
       font: 400 18px/22px $open-sans;
       color: #717171;
     }

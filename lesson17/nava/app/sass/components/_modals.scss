@@ -1,13 +1,13 @@
-.modal-header{
+.modal-header {
   position: relative;
   margin: 0 10px;
   border-bottom: none;
 
-  .modal-title{
+  .modal-title {
     font: 400 30px/40px $raleway;
     color: #ffffff;
   }
-  .modal-header-border{
+  .modal-header-border {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -17,13 +17,15 @@
 
   }
 }
-.modal-body{
+
+.modal-body {
   font: 400 16px/30px $open-sans;
   color: #ffffff;
 }
-.modal-footer{
+
+.modal-footer {
   border: none;
-  .btn-modal{
+  .btn-modal {
     position: relative;
     padding: 15px 30px;
     font: 400 14px/22px $raleway;
@@ -34,19 +36,20 @@
     background-color: $brand-color;
     color: #ffffff;
     transition: 0.5s;
-    &:hover{
+    &:hover {
       background-color: #c71a1b;
       transition: 0.5s;
     }
   }
 }
-.modal-form{
-  .form-list{
+
+.modal-form {
+  .form-list {
     padding: 0;
     list-style: none;
     text-align: center;
-    li{
-      input{
+    li {
+      input {
         width: 80%;
         margin-top: 10px;
         padding: 10px 20px;
@@ -61,10 +64,6 @@
   }
 }
 
-
-
-
-
 #modal-box-dest-1 {
   .modal-content {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
@@ -73,78 +72,82 @@
     background-position: center;
   }
 }
-#modal-box-dest-2{
-  .modal-content{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
+
+#modal-box-dest-2 {
+  .modal-content {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
     url("../img/destinations-img2.png");
     background-size: cover;
     background-position: center;
   }
 }
-#modal-box-dest-3{
-  .modal-content{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
+
+#modal-box-dest-3 {
+  .modal-content {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
     url("../img/destinations-img3.png");
     background-size: cover;
     background-position: center;
   }
 }
-#modal-box-dest-4{
-  .modal-content{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
+
+#modal-box-dest-4 {
+  .modal-content {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
     url("../img/destinations-img4.png");
     background-size: cover;
     background-position: center;
   }
 }
-#modal-box-dest-5{
-  .modal-content{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
+
+#modal-box-dest-5 {
+  .modal-content {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
     url("../img/destinations-img5.png");
     background-size: cover;
     background-position: center;
   }
 }
 
-#modal-box-boats-1{
-  .modal-content{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
+#modal-box-boats-1 {
+  .modal-content {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
     url("../img/boat-img1.png");
     background-size: cover;
     background-position: center;
   }
 }
 
-#modal-box-boats-2{
-  .modal-content{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
+#modal-box-boats-2 {
+  .modal-content {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
     url("../img/boat-img2.png");
     background-size: cover;
     background-position: center;
   }
 }
 
-#modal-box-boats-3{
-  .modal-content{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
+#modal-box-boats-3 {
+  .modal-content {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
     url("../img/boat-img3.png");
     background-size: cover;
     background-position: center;
   }
 }
 
-#modal-box-boats-4{
-  .modal-content{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
+#modal-box-boats-4 {
+  .modal-content {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
     url("../img/boat-img4.png");
     background-size: cover;
     background-position: center;
   }
 }
 
-#modal-box-owner{
-  .modal-content{
+#modal-box-owner {
+  .modal-content {
     background-color: transparent;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
   }
 }
