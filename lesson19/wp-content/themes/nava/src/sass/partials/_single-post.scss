@@ -1,0 +1,44 @@
+.single-boats{}
+
+.post-article{
+  padding: 20px 0 50px;
+  img{
+    max-width: 100%;
+  }
+  .post-title{
+    padding: 20px 0;
+    font: 400 48px/52px $raleway;
+  }
+
+  .post-info{
+    padding: 10px;
+    font: 700 16px/22px $open-sans;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #e7434e;
+    transition: 0.5s;
+    &:hover{
+      background-color: #c71a1b;
+      transition: 0.5s;
+    }
+    i{
+      margin-right: 10px;
+    }
+  }
+
+  .post-content{
+    padding: 20px 0;
+    font: 400 20px/26px $open-sans;
+    img{
+      margin: 15px;
+      margin-left: 0;
+      float: left;
+    }
+  }
+
+}
+
+
+

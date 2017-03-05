@@ -1,0 +1,9 @@
+.idea/
+node_modules/
+bower_components/
+src/libs/
+src/css/
+dist/
+.sass-cache
+*.css.map
+

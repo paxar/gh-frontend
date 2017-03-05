@@ -1,0 +1,95 @@
+/*
+Theme Name: Nava theme
+Theme URI:
+Author: paxar
+
+Description: Description
+Version: 1.0.0
+
+Text Domain: nava
+Tags:
+
+*/
+
+
+
+
+/*---------- First load-------------*/
+
+/*   base styles   */
+@import "base/fonts";
+@import "base/base";
+/*   variables styles      */
+@import "utils/mixins";
+@import "utils/variables";
+
+
+/*----------- Second  load ------------*/
+
+/*   components styles     */
+
+@import "components/buttons";
+@import "components/forms";
+@import "components/text-styles";
+@import "components/gallery";
+@import "components/video";
+@import "components/modals";
+
+
+/*   pages styles */
+
+
+@import "partials/header";
+@import "partials/hero";
+@import "partials/destination";
+@import "partials/owner";
+@import "partials/boats";
+
+@import "partials/single-post";
+
+
+@import "partials/footer";
+
+
+
+/*Customize bootstrap*/
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  //border-bottom: 1px solid rgba(221, 228, 234, 0.2);
+  @include transition(1s);
+  .navbar-header{
+    //height: 160px;
+  }
+  .navbar-collapse{
+    overflow: hidden;
+    max-height: 450px;
+    padding: 15px 0;
+    border-color: transparent;
+    text-align: center;
+    //background-color: rgba(255,255,255,0.7);
+
+  }
+  .navbar-toggle:hover{
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-default{
+    .navbar-collapse{
+	 background-color: transparent;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+
+
