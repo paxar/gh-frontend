@@ -3,14 +3,14 @@
 </div>
 
 
-<p>single-destinations.php page</p>
+<!--<p>single-destinations.php page</p>-->
 
 <section class="single-destinations">
     <div class="container">
-        <h2 class="title">About destination</h2>
-        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt
-            ut labore et</p>
+
+        <h2 class="title"><?php echo get_theme_mod('post_destination_title', 'About destination'); ?></h2>
+        <p class="subtitle"><?php echo get_theme_mod('post_destination_subtitle', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et'); ?></p>
 
         <?php
         while (have_posts()) : the_post();

@@ -26,28 +26,29 @@
         <div class="row">
             <div class="destination-info col-xs-12">
                 <div class="destination-info-item">
-                    <span class="item-count">2,300</span>
+                    <span class="item-count"><?php echo get_theme_mod('destination_count'); ?></span>
                     <span class="item-description">Destinations</span>
                 </div>
                 <div class="destination-info-item">
-                    <span class="item-count">1,000</span>
+                    <span class="item-count"><?php echo get_theme_mod('cities_count'); ?></span>
                     <span class="item-description">Cities</span>
                 </div>
                 <div class="destination-info-item">
-                    <span class="item-count">35,000</span>
+                    <span class="item-count"><?php echo get_theme_mod('boats_count'); ?></span>
                     <span class="item-description">Boats</span>
                 </div>
                 <div class="destination-info-item">
-                    <span class="item-count">50,000</span>
+                    <span class="item-count"><?php echo get_theme_mod('sailors_count'); ?></span>
                     <span class="item-description">Sailors</span>
                 </div>
             </div>
         </div>
 
-        <h2 class="title">EXPLORE OUR TOP DESTINATIONS</h2>
-        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt
-            ut labore et</p>
+        <h2 class="title"><?php echo get_theme_mod('home_destination_title', 'EXPLORE OUR TOP DESTINATIONS'); ?></h2>
+        <p class="subtitle"><?php echo get_theme_mod('home_destination_subtitle', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et'); ?></p>
+
+
 
 
 
@@ -55,12 +56,15 @@
 
         <?php
 
-        if (have_posts()) :
-            //query_posts('cat=3');
+        $args = array(
+            'post_type' => 'destination'
+        );
 
-            query_posts('post_type=destination' );// указываем ID рубрик, которые необходимо вывести.
+        $query = new WP_Query( $args );
 
-            while (have_posts()) : the_post();
+        if ($query -> have_posts()) :
+
+            while ($query -> have_posts()) : $query -> the_post();
                 ?>
 
 
@@ -90,6 +94,7 @@
 
                 <?php
             endwhile;
+            wp_reset_postdata();
 
         else :
             echo '<p> No content </p>';
@@ -108,8 +113,8 @@
 
 <section class="owner">
     <video autoplay loop muted class="bgvideo">
-        <source src="<?php bloginfo('template_directory'); ?>/img/water.mp4" type="video/mp4">
-        </source>
+        <!--<source src="<?php /*bloginfo('template_directory'); */?>/img/water.mp4" type="video/mp4">
+        </source>-->
     </video>
     <div class="container">
 
@@ -127,22 +132,24 @@
 <section id="boats" class="boats">
     <div class="container">
 
-        <h2 class="title">FEATURED BOATS</h2>
-        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt
-            ut labore et</p>
+
+        <h2 class="title"><?php echo get_theme_mod('home_boat_title', 'FEATURED BOATS'); ?></h2>
+        <p class="subtitle"><?php echo get_theme_mod('home_boat_subtitle', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et'); ?></p>
 
 
         <?php
 
-        if (have_posts()) :
-            //query_posts('cat=3');
+        $args = array(
+            'post_type' => 'boats'
+        );
 
-            query_posts('post_type=boats' );// указываем ID рубрик, которые необходимо вывести.
+        $query = new WP_Query( $args );
 
-            while (have_posts()) : the_post();
+        if ($query -> have_posts()) :
+
+            while ($query -> have_posts()) : $query -> the_post();
                 ?>
-
 
                 <div class="boats-item gallery-item modal-boats-1 col-xs-12 col-sm-6">
                     <div class="img-wrap">
@@ -171,6 +178,7 @@
 
                 <?php
             endwhile;
+            wp_reset_postdata();
 
         else :
             echo '<p> No content </p>';

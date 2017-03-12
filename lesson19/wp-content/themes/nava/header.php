@@ -13,8 +13,8 @@
 
 <div class="hero-bg">
     <video autoplay loop muted class="bgvideo" id="bgvideo">
-        <source src="<?php bloginfo('template_directory'); ?>/img/waves.mp4" type="video/mp4">
-        </source>
+        <!--<source src="<?php /*bloginfo('template_directory'); */?>/img/waves.mp4" type="video/mp4">
+        </source>-->
     </video>
 
 

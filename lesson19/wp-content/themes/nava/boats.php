@@ -6,20 +6,23 @@
 <section id="boats" class="boats">
     <div class="container">
 
-        <h2 class="title">FEATURED BOATS</h2>
-        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt
-            ut labore et</p>
+        <h2 class="title"><?php echo get_theme_mod('page_boat_title', 'FEATURED BOATS'); ?></h2>
+        <p class="subtitle"><?php echo get_theme_mod('page_boat_subtitle', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et'); ?></p>
 
 
         <?php
 
-        if (have_posts()) :
-            //query_posts('cat=3');
+        $args = array(
+            'post_type' => 'boats'
+        );
 
-            query_posts('post_type=boats');// указываем ID рубрик, которые необходимо вывести.
+        $query = new WP_Query( $args );
 
-            while (have_posts()) : the_post();
+        if ($query -> have_posts()) :
+
+
+            while ($query -> have_posts()) : $query -> the_post();
                 ?>
 
 
@@ -55,7 +58,7 @@
 
                 <?php
             endwhile;
-
+            wp_reset_postdata();
         else :
             echo '<p> No content </p>';
 

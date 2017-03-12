@@ -3,14 +3,13 @@
     </div>
 
 
-    <p>single-boats.php page</p>
+<!--    <p>single-boats.php page</p>-->
 
     <section class="single-boats">
         <div class="container">
-            <h2 class="title">About boat</h2>
-            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt
-                ut labore et</p>
+            <h2 class="title"><?php echo get_theme_mod('post_boat_title', 'about BOAT'); ?></h2>
+            <p class="subtitle"><?php echo get_theme_mod('post_boat_subtitle', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et'); ?></p>
 
             <?php
             while (have_posts()) : the_post();

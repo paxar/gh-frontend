@@ -282,6 +282,31 @@ i {
   background-color: transparent;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%); }
 
+.widget_archive {
+  padding: 30px 0; }
+  .widget_archive .widgettitle {
+    float: left;
+    padding: 0 20px;
+    font: 400 18px/22px "Raleway", sans-serif; }
+  .widget_archive ul {
+    padding: 0;
+    list-style: none; }
+    .widget_archive ul li {
+      display: inline-block; }
+      .widget_archive ul li a {
+        display: block;
+        padding: 10px;
+        font: 700 16px/22px "Open Sans", sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 5px;
+        color: #ffffff;
+        background-color: #e7434e;
+        transition: 0.5s; }
+        .widget_archive ul li a:hover {
+          background-color: #c71a1b;
+          transition: 0.5s; }
+
 /*   pages styles */
 .header .container-header {
   max-width: 1500px;

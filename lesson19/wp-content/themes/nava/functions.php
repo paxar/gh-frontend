@@ -65,6 +65,271 @@ endif;
 add_action( 'after_setup_theme', 'gh_theme_setup' );
 
 
+/**
+ * @param $wp_customize
+ */
+function mytheme_customize_register($wp_customize ) {
+    //All our sections, settings, and controls will be added here
+//----------------- Section HERO COUNTERS ---------------------------------
+    $wp_customize->add_section( 'custom_hero_settings' , array(
+        'title'      => __( 'Custom Hero settings', 'gh-theme' ),
+        'priority'   => 30,
+    ) );
+
+    $wp_customize->add_setting( 'destination_count' , array(
+        'default'   => '0',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'hero_destination', array(
+        'label'      => __( 'Counter destinations', 'gh-theme' ),
+        'section'    => 'custom_hero_settings',
+        'settings'   => 'destination_count',
+    ) ) );
+
+    $wp_customize->add_setting( 'cities_count' , array(
+        'default'   => '0',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'hero_cities', array(
+        'label'      => __( 'Counter cities', 'gh-theme' ),
+        'section'    => 'custom_hero_settings',
+        'settings'   => 'cities_count',
+    ) ) );
+
+    $wp_customize->add_setting( 'boats_count' , array(
+        'default'   => '0',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'hero_boats', array(
+        'label'      => __( 'Counter boats', 'gh-theme' ),
+        'section'    => 'custom_hero_settings',
+        'settings'   => 'boats_count',
+    ) ) );
+
+    $wp_customize->add_setting( 'sailors_count' , array(
+        'default'   => '0',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'hero_sailors', array(
+        'label'      => __( 'Counter sailors', 'gh-theme' ),
+        'section'    => 'custom_hero_settings',
+        'settings'   => 'sailors_count',
+    ) ) );
+
+    //----------------- Destinations TITLES, subtitles ---------------------------------
+    $wp_customize->add_section( 'custom_destinations_titles' , array(
+        'title'      => __( 'Custom Destinations Titles', 'gh-theme' ),
+        'priority'   => 30,
+    ) );
+
+    $wp_customize->add_setting( 'home_destination_title' , array(
+        'default'   => 'EXPLORE OUR TOP DESTINATIONS',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'home_destination_title', array(
+        'label'      => __( 'Home Destination Title', 'gh-theme' ),
+        'section'    => 'custom_destinations_titles',
+        'settings'   => 'home_destination_title',
+    ) ) );
+
+    $wp_customize->add_setting( 'home_destination_subtitle' , array(
+        'default'   => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'home_destination_subtitle', array(
+        'label'      => __( 'Home Destination subtitle', 'gh-theme' ),
+        'section'    => 'custom_destinations_titles',
+        'settings'   => 'home_destination_subtitle',
+    ) ) );
+
+    $wp_customize->add_setting( 'page_destination_title' , array(
+        'default'   => 'EXPLORE OUR TOP DESTINATIONS',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'page_destination_title', array(
+        'label'      => __( 'Page Destination Title', 'gh-theme' ),
+        'section'    => 'custom_destinations_titles',
+        'settings'   => 'page_destination_title',
+    ) ) );
+
+    $wp_customize->add_setting( 'page_destination_subtitle' , array(
+        'default'   => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'page_destination_subtitle', array(
+        'label'      => __( 'Page Destination subtitle', 'gh-theme' ),
+        'section'    => 'custom_destinations_titles',
+        'settings'   => 'page_destination_subtitle',
+    ) ) );
+
+    $wp_customize->add_setting( 'post_destination_title' , array(
+        'default'   => 'about DESTINATION',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'post_destination_title', array(
+        'label'      => __( 'Post Destination Title', 'gh-theme' ),
+        'section'    => 'custom_destinations_titles',
+        'settings'   => 'post_destination_title',
+    ) ) );
+
+    $wp_customize->add_setting( 'post_destination_subtitle' , array(
+        'default'   => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'post_destination_subtitle', array(
+        'label'      => __( 'Post Destination subtitle', 'gh-theme' ),
+        'section'    => 'custom_destinations_titles',
+        'settings'   => 'post_destination_subtitle',
+    ) ) );
+
+
+    //----------------- Destinations TITLES, subtitles ---------------------------------
+    $wp_customize->add_section( 'custom_boats_titles' , array(
+        'title'      => __( 'Custom Boats Titles', 'gh-theme' ),
+        'priority'   => 30,
+    ) );
+
+    $wp_customize->add_setting( 'home_boat_title' , array(
+        'default'   => 'FEATURED BOATS',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'home_boat_title', array(
+        'label'      => __( 'Home Boat Title', 'gh-theme' ),
+        'section'    => 'custom_boats_titles',
+        'settings'   => 'home_boat_title',
+    ) ) );
+
+    $wp_customize->add_setting( 'home_boat_subtitle' , array(
+        'default'   => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'home_boat_subtitle', array(
+        'label'      => __( 'Home Boat subtitle', 'gh-theme' ),
+        'section'    => 'custom_boats_titles',
+        'settings'   => 'home_boat_subtitle',
+    ) ) );
+
+    $wp_customize->add_setting( 'page_boat_title' , array(
+        'default'   => 'FEATURED BOATS',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'page_boat_title', array(
+        'label'      => __( 'Page Boat Title', 'gh-theme' ),
+        'section'    => 'custom_boats_titles',
+        'settings'   => 'page_boat_title',
+    ) ) );
+
+    $wp_customize->add_setting( 'page_boat_subtitle' , array(
+        'default'   => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'page_boat_subtitle', array(
+        'label'      => __( 'Page Boat subtitle', 'gh-theme' ),
+        'section'    => 'custom_boats_titles',
+        'settings'   => 'page_boat_subtitle',
+    ) ) );
+
+    $wp_customize->add_setting( 'post_boat_title' , array(
+        'default'   => 'about boat',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'post_boat_title', array(
+        'label'      => __( 'Post Boat Title', 'gh-theme' ),
+        'section'    => 'custom_boats_titles',
+        'settings'   => 'post_boat_title',
+    ) ) );
+
+    $wp_customize->add_setting( 'post_boat_subtitle' , array(
+        'default'   => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'post_boat_subtitle', array(
+        'label'      => __( 'Post Boat subtitle', 'gh-theme' ),
+        'section'    => 'custom_boats_titles',
+        'settings'   => 'post_boat_subtitle',
+    ) ) );
+
+    //--------------------Custom home page backgrounds-----------------------------------
+
+    $wp_customize->add_section( 'custom_home_backgrounds' , array(
+        'title'      => __( 'Custom Home Backgrounds', 'gh-theme' ),
+        'priority'   => 30,
+    ) );
+
+   $wp_customize->add_setting( 'hero_background' , array(
+        //'default'   => '"_"',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'home_hero_background', array(
+        'label'      => __( 'Hero background', 'gh-theme' ),
+        'section'    => 'custom_home_backgrounds',
+        'settings'   => 'hero_background',
+    ) ) );
+
+    $wp_customize->add_setting( 'owner_background' , array(
+        //'default'   => '"_"',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'home_owner_background', array(
+        'label'      => __( 'Owner section background', 'gh-theme' ),
+        'section'    => 'custom_home_backgrounds',
+        'settings'   => 'owner_background',
+    ) ) );
+}
+add_action( 'customize_register', 'mytheme_customize_register' );
+
+function mytheme_customize_css()
+{
+
+    ?>
+    <style type="text/css">
+        .hero-bg {
+            background: url("<?php echo get_theme_mod('hero_background'); ?>") center/cover no-repeat;
+        }
+        .owner {
+            background: url("<?php echo get_theme_mod('owner_background'); ?>") center/cover no-repeat;
+        }
+
+    </style>
+    <?php
+}
+add_action( 'wp_head', 'mytheme_customize_css');
+
+
+
+
+function theme_slug_widgets_init() {
+    register_sidebar( array(
+        'name' => __( 'Main Sidebar', 'theme-slug' ),
+        'id' => 'sidebar-1',
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widgettitle">',
+        'after_title'   => '</h4>',
+    ) );
+}
+add_action( 'widgets_init', 'theme_slug_widgets_init' );
+
+
 function gh_theme_scripts() {
 
 
@@ -139,8 +404,6 @@ function create_dest() {
 }
 
 add_action( 'init', 'create_dest' );
-
-
 
 function create_boats() {
     register_post_type( 'boats',
